@@ -20,14 +20,12 @@ body{
     max-width: 1000px;
     margin: 0 auto;
 }
-.form-container{
-    background-color: var(--slate-gray);
-}
+
 /* IMAGENES */
 .img-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	grid-auto-rows: 200px;
+	grid-auto-rows: 150px;
 	grid-auto-flow: dense;
     background-color: var(--night);
     padding: 20px;
@@ -59,6 +57,9 @@ body{
 
 
 /* FORM */
+.form-container{
+    max-width: 600px;
+}
 form label{
     font-size: 1rem;
 }
@@ -74,6 +75,7 @@ form label{
     background: var(--night);
     border-radius: 10px;
     color: var(--platinum);
+    font-size: 10px;
 }
 .pass strong{
     font-weight: bold;
@@ -114,17 +116,49 @@ input[type=checkbox]{
     top:1px;
 }
 
+/* MEDIA QUERYS */
+
 @media screen and (max-width: 768px){
     form label{
         font-size: 1.3rem;
     }
+}
+@media screen and (min-width: 660px){
+    .identidad{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 50px;
+    }
+    .identidad input[type=text]{
+        width: 290px;
+    }
+    .localizacion{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     .passwords{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    .passwords input[type=password]{
+        width: 260px;
+    }
+    .pass{
+        width: 260px;
     }
 }
-@media screen and (max-width: 780px){
+@media screen and (max-width: 992px){
     .img-container{
         display: none;
+    }
+}
+@media screen and (min-width: 992px){
+    .identidad{
+        gap: 45px;
+    }
+    .identidad input[type=text]{
+        width: 230px;
     }
 }

@@ -9,27 +9,29 @@
 	<link href="./style.css" rel="stylesheet">
   </head>
 <body>
-<section class="container container-fluid d-flex">
-    <form class="form-container col-md-6 p-2 fw-semibold d-flex flex-column gap-1">
-        <div class="col-10 col-md-12">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre" pattern="[a-z ,.'-]+$/i" required>
-        </div>
-        <div class="col-10 col-md-12">
-            <label for="apellido" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="apellido" pattern="[a-z ,.'-]+$/i" required>
+<section class="container container-fluid d-flex justify-content-center">
+    <form class="form-container col-lg-6 p-2 fw-semibold d-flex flex-column gap-1">
+        <div class="identidad">
+            <div class="col-10 col-md-5">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" pattern="[a-z ,.'-]+$/i" required>
+            </div>
+            <div class="col-10 col-md-5">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" pattern="[a-z ,.'-]+$/i" required>
+            </div>
         </div>
         <div class="col-10 col-md-12">
             <label for="email" class="form-label">Email</label>
             <input type="email" class="form-control" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
         </div>
-        <div class="col-12 passwords">
-            <div class="col-10 col-md-5">
+        <div class="col-12 passwords d-flex flex-column">
+            <div class="col-10 col-lg-5">
                 <label for="password" class="form-label">Password</label>
                 <input type="password" class="form-control" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                 <p class="pass mt-2 fw-light p-2">el password debe contener al menos <strong>un número</strong>, <strong>una minúscula</strong>, <strong>una mayúscula</strong> y debe ser de, al menos, <strong>8(ocho) caracteres</strong>.</p>
             </div>
-            <div class="col-10 col-md-5">
+            <div class="col-10 col-lg-5">
                 <label for="password" class="form-label">Repetir Password</label>
                 <input type="password" class="form-control" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
             </div>
@@ -38,42 +40,44 @@
             <label for="direccion" class="form-label">Dirección</label>
             <input type="text" class="form-control" id="direccion" placeholder="Siempre viva 123 ..." pattern="[a-zA-Z0-9-]+" required>
         </div>
-        <div class="col-10 col-md-12">
-            <label for="localidad" class="form-label">Localidad</label>
-            <input type="text" class="form-control" id="localidad" placeholder="Localidad..." pattern="[a-zA-Z0-9-]+" required>
-        </div>
-        <div class="col-10 col-md-5">
-            <label for="provincia" class="form-label">Provincia</label>
-            <select id="provincia" class="form-select" required>
-            <option>Selecciona tu provincia...</option>
-            <option>Jujuy</option>
-                <option>Salta</option>
-                <option>Formosa</option>
-                <option>Corrientes</option>
-                <option>Chaco</option>
-                <option>Misiones</option>
-                <option>Tucuman</option>
-                <option>Catamarca</option>
-                <option>Santiago del Estero</option>
-                <option>La Rioja</option>
-                <option>San Juan</option>
-                <option>San Luis</option>
-                <option>Cordoba</option>
-                <option>Entre Rios</option>
-                <option>Santa Fe</option>
-                <option>Buenos Aires</option>
-                <option>La Pampa</option>
-                <option>Neuquen</option>
-                <option>Mendoza</option>
-                <option>Rio Negro</option>
-                <option>Chubut</option>
-                <option>Santa Cruz</option>
-                <option>Tierra del Fuego</option>
-            </select>
-        </div>
-        <div class="col-4 col-md-5">
-            <label for="codpostal" class="form-label">Código Postal</label>
-            <input type="number" class="form-control" id="codpostal" required>
+        <div class="localizacion">
+            <div class="col-10 col-md-3">
+                <label for="localidad" class="form-label">Localidad</label>
+                <input type="text" class="form-control" id="localidad" placeholder="Localidad..." pattern="[a-zA-Z0-9-]+" required>
+            </div>
+            <div class="col-10 col-md-3">
+                <label for="provincia" class="form-label">Provincia</label>
+                <select id="provincia" class="form-select" required>
+                    <option>Selecciona tu provincia...</option>
+                    <option>Jujuy</option>
+                    <option>Salta</option>
+                    <option>Formosa</option>
+                    <option>Corrientes</option>
+                    <option>Chaco</option>
+                    <option>Misiones</option>
+                    <option>Tucuman</option>
+                    <option>Catamarca</option>
+                    <option>Santiago del Estero</option>
+                    <option>La Rioja</option>
+                    <option>San Juan</option>
+                    <option>San Luis</option>
+                    <option>Cordoba</option>
+                    <option>Entre Rios</option>
+                    <option>Santa Fe</option>
+                    <option>Buenos Aires</option>
+                    <option>La Pampa</option>
+                    <option>Neuquen</option>
+                    <option>Mendoza</option>
+                    <option>Rio Negro</option>
+                    <option>Chubut</option>
+                    <option>Santa Cruz</option>
+                    <option>Tierra del Fuego</option>
+                </select>
+            </div>
+            <div class="col-5 col-md-3">
+                <label for="codpostal" class="form-label">Código Postal</label>
+                <input type="number" class="form-control" id="codpostal" required>
+            </div>
         </div>
         <div class="col-12 mt-4 d-flex flex-column justify-content-start align-items-center">
             <div class="form-check">
