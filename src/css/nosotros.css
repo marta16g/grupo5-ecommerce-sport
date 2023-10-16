@@ -1,0 +1,210 @@
+@import url('[https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap]');
+
+:root{
+--night: #121212;
+--green-erin: #0EEF53;
+--platinum: #DDDDDD;
+--light-blue: #B9EDDD;
+--tiffany-blue: #87CBB9;
+--slate-gray: #577D86;
+font-family: 'Noto Sans', sans-serif;
+}
+
+
+body{
+background-color: var(--platinum);
+color: var(--night);
+}
+
+h1{
+margin-bottom: 15px;
+}
+.container {
+  max-height: 800px;
+  min-height: 600px;
+  max-width: 900px;
+}
+.border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border .3s;
+  position: relative;
+}
+.border:hover {
+  border: 3px solid red;
+}
+.card-container{
+  min-height: 400px;
+}
+.card {
+  height: 379px;
+  min-width: 300px;
+  max-width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  transition: all 0.8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card0 {
+  background: url("../img/img-nosotros/3.jpg") center center no-repeat;
+  background-size: 400px;
+filter: grayscale(1);
+}
+.card0:hover {
+  background: url("../img/img-nosotros/3.jpg") left center no-repeat;
+  background-size: 600px;
+filter: grayscale(0.3);
+}
+
+.card1 {
+  background: url("../img/img-nosotros/5.jpg") center center no-repeat;
+  background-size: 400px;
+filter: grayscale(1);
+}
+.card1:hover {
+  background: url("../img/img-nosotros/5.jpg") left center no-repeat;
+  background-size: 600px;
+filter: grayscale(0.3);
+}
+
+.card2 {
+  background: url("../img/img-nosotros/2.jpg") center center no-repeat;
+  background-size: 400px;
+filter: grayscale(1);
+}
+.card2:hover {
+  background: url("../img/img-nosotros/2.jpg") left center no-repeat;
+  background-size: 600px;
+filter: grayscale(0.3);
+}
+
+.card3{
+  background: url("../img/img-nosotros/1.jpg") center center no-repeat;
+  background-size: 400px;
+filter: grayscale(1);
+}
+.card3:hover {
+  background: url("../img/img-nosotros/1.jpg") left center no-repeat;
+  background-size: 600px;
+filter: grayscale(0.3);
+}
+
+.card4{
+  background: url("../img/img-nosotros/4.jpg") center center no-repeat;
+  background-size: 400px;
+	filter: grayscale(1);
+}
+.card4:hover {
+  background: url("../img/img-nosotros/4.jpg") left center no-repeat;
+  background-size: 600px;
+	filter: grayscale(0.3);
+}
+
+.card0:hover h2,
+.card0:hover .fa,
+.card1:hover h2,
+.card1:hover .fa,
+.card2:hover h2,
+.card2:hover .fa,
+.card3:hover h2, 
+.card3:hover .fa, 
+.card4:hover h2, 
+.card4:hover .fa,
+.card0:hover .icons-data,
+.card1:hover .icons-data,
+.card2:hover .icons-data,
+.card3:hover .icons-data,
+.card4:hover .icons-data{
+  opacity: 1;
+}
+
+
+h2 {
+  color: #fff;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.fa, .icons-data{
+  opacity: 0;
+  transition: opacity 1s;
+	text-decoration:none;
+}
+.icons-data a{
+color: #fff;
+font-weight: 500;
+}
+.icons {
+  position: absolute;
+  fill: #fff;
+list-style: none;
+  color: #fff;
+  bottom: 20px;
+height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+gap:10px;
+}
+
+@media screen and (max-width: 569px){
+  .container{
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .card-container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 400px;
+    gap: 10px;
+    padding: 15px;
+    scroll-snap-align: center;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+
+}
+@media screen and (min-width: 569px){
+  .container{
+    margin: 0 auto;
+  }
+  .card-container{
+    width: 620px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 900px){
+  .container{
+    width: 1100px;
+  }
+  .card-container{
+    width: 100%;
+    justify-content: space-around;
+  }
+  .border{
+    width: 260px;
+    height: 325px;
+  }
+  .card{
+    min-width: 270px;
+    max-width: 270px;
+    height: 339px;
+  }
+}
