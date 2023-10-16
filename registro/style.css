@@ -9,8 +9,11 @@
     --slate-gray: #577D86;
     font-family: 'Noto Sans', sans-serif;
 }
-
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: var(--platinum);
     color: var(--night);
