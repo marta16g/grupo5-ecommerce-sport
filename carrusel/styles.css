@@ -1,0 +1,22 @@
+@media screen and (min-width: 760px){
+    .carousel-inner figure{
+        max-height: 350px;
+    }
+    .carousel-inner figure img{
+        width: 90%;
+    }
+}
+@media screen and (min-width: 900px){
+    .carousel-inner figure img{
+        object-fit: cover;
+    }
+    #img1{
+        object-position: 100% 80%;
+    }
+    #img2{
+        object-position: 100% 30%;
+    }
+    #img3{
+        object-position: 100% 45%;
+    }
+}
