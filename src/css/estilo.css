@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #DDDDDD;
+}
+
+h3{
+    font-family: 'Noto Sans', sans-serif;
+    color: #0EEF53;
+    background-color: #121212;
+    width: 100%;
+}
+
+button{
+    color: #0EEF53;
+}
+a{
+    text-decoration: none;
+}
+
+.div1{
+    box-shadow: 0rem 0rem 1rem gray ;
+}
+
+.div1 img{
+    object-fit: contain;
+}
+
+.div1:hover{ 
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+.wsp{
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.wsp:hover{
+    transform: scale(1.1);
+}
+
+@media (min-width: 1200.5px) {
+    
+
+.artMarcas{
+    animation: movimiento 5s infinite linear;
+    display: inline-block;
+}
+
+.marcas{
+    white-space: nowrap;
+    overflow: hidden;
+}
+.marcas img{
+    filter: grayscale();
+    transition: 1s;
+}
+.marcas img:hover{
+    animation: cambioDeColor 0.7s forwards;
+}
+
+@keyframes movimiento{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes cambioDeColor{
+    from{
+          filter: grayscale();
+    }
+    to{
+        filter: grayscale(0%);
+    }
+}
+}
+@media(max-width: 1200px){
+    
+    .artMarcas{
+        animation: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* .marcas img:hover{
+        animation: none;
+    } */
+
+    .marcas img{
+        width: 10em;
+    }
+
+    .artMarcas:first-child{
+        display: none;
+    }
+    
+}
+       
