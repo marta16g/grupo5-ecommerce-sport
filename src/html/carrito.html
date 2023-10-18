@@ -1,47 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/carrito.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-
+    <link rel="stylesheet" href="../css/nav.css" />
+    <!-- <link rel="stylesheet" href="../css/carrito.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <header>
-        <div class="log">
-            <img  src="../img/img-carrito/logo.png.png" alt="imagen de logo">
-        </div>
-
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="check-btn"> <i class="fa-solid fa-bars" style="color: #ffffff;"></i></label>
+      <div class="nav-logo">
+        <img src="../img/img-carrito/logo.png.png" alt="imagen de logo" />
+      </div>
+      <nav>
         <ul class="nav-links">
             <li>
-                <a href="">Inicio</a>
+                <a href="index.html">Inicio</a>
             </li>
             <li>
-                <a href="">Nosotros</a>
+                <a href="src/html/nosotros.html">Nosotros</a>
             </li>
             <li>
-                <a href="">Contacto</a>
+                <a href="src/html/contacto.html">Contacto</a>
+            </li>
+            <li>
+                <a href="src/html/productos.html">Productos</a>
             </li>
         </ul>
-           
-        <div class="search">
-            <input type="text" placeholder="Que estas buscando?...">
-            <button><img src="../img/img-carrito/lupa.png"  alt="foto de lupa">
-              </button>
-        </div>
-        <div class="sesion" >
-            <a href="">Iniciar Sesion</a>
-            <a href="">Resgistro</a>
-            <a href="">Productos</a>
-            <a class="link-carrito" href=""><img  class="carrito" src="../img/img-carrito/icons8-bolsa-de-compras-50 .png" alt="carrito de compras">
+        <button class="nav-burguer">
+            <div></div>
+            <div></div>
+            <div></div>
+            <ul class="nav-links2">
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="src/html/nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="src/html/contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="src/html/productos.html">Productos</a>
+                </li>
+                <li class="session-link">
+                    <a href="#">Iniciar</a>
+                </li>
+                <li class="session-link">
+                    <a href="src/html/registro.html">Registrarse</a>
+                </li>
+                <li class="session-link">
+                    <a href="src/html/carrito.html">Carrito</a>
+                </li>
+            </ul>
+        </button>
+        <section class="search">
+            <input type="text" placeholder="Que estas buscando?..." />
+            <figure>
+                <img src="../img/img-404/lupa.svg" alt="foto de lupa" />
+            </figure>
+        </section>
+        <section class="session">
+            <a href="">Iniciar</a>
+            <a href="src/html/registro.html">Registrarse</a>
+            <a class="link-carrito" href="src/html/carrito.html">
+                <img
+                class="carrito"
+                src="../img/img-carrito/icons8-bolsa-de-compras-50 .png"
+                alt="carrito de compras"
+              width="30px"
+              height="30px"
+              />
             </a>
-        </div>
-    </nav>
-    
+        </section>
+      </nav>
     </header>
+  </body>
+</html>

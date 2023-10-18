@@ -7,12 +7,77 @@
     <link rel="stylesheet" href="src/css/estilo.css">
     <link rel="stylesheet" href="./src/css/carrusel.css">  <!-- ESTILOS CARRUSEL -->
     <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/nav.css">
     <title>Energy Sport</title>
   </head>
   <body>   
     <header>
-      <!-- cartel estrecho con algún anuncio de descuento o precio de envío (fijarse en marathon) -->
-      <!-- navbar con logo, links a páginas (el de productos debe tener sub-ítems DESHABILITADOS con las categorías mujer, hombre, niños), caja de búsqueda, carrito y botón login con modal-->
+      <div class="nav-logo">
+        <img src="src/img/img-carrito/logo.png.png" alt="imagen de logo" />
+      </div>
+      <nav>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="src/html/nosotros.html">Nosotros</a>
+            </li>
+            <li>
+                <a href="src/html/contacto.html">Contacto</a>
+            </li>
+            <li>
+                <a href="src/html/productos.html">Productos</a>
+            </li>
+        </ul>
+        <button class="nav-burguer">
+            <div></div>
+            <div></div>
+            <div></div>
+            <ul class="nav-links2">
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="src/html/nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="src/html/contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="src/html/productos.html">Productos</a>
+                </li>
+                <li class="session-link">
+                    <a href="#">Iniciar</a>
+                </li>
+                <li class="session-link">
+                    <a href="src/html/registro.html">Registrarse</a>
+                </li>
+                <li class="session-link">
+                    <a href="src/html/carrito.html">Carrito</a>
+                </li>
+            </ul>
+        </button>
+        <section class="search">
+            <input type="text" placeholder="Que estas buscando?..." />
+            <figure>
+                <img src="src/img/img-404/lupa.svg" alt="foto de lupa" />
+            </figure>
+        </section>
+        <section class="session">
+            <a href="">Iniciar</a>
+            <a href="src/html/registro.html">Registrarse</a>
+            <a class="link-carrito" href="src/html/carrito.html">
+                <img
+                class="carrito"
+                src="src/img/img-carrito/icons8-bolsa-de-compras-50 .png"
+                alt="carrito de compras"
+              width="30px"
+              height="30px"
+              />
+            </a>
+        </section>
+      </nav>
     </header>
     <main>
       <section id="energySportCarrousel" class="carousel carousel-dark slide">
