@@ -22,10 +22,16 @@
 .footer-contact{
     flex-direction: column;
     color: var(--tiffany-blue);
+    cursor: default;
 }
-.footer-contact p i{
+.footer-contact p i, .footer-contact a i{
     font-size: 20px;
     margin-right: 10px;
+    color: var(--green-erin);
+}
+.footer-contact a{
+    text-decoration: none;
+    color: var(--tiffany-blue);
 }
 .footer-information {
     display: flex;
@@ -75,6 +81,9 @@
     background-color: var(--night);
     border: 1px solid var(--green-erin);
     color: var(--green-erin);
+}
+.footer-ig:hover i, .footer-tw:hover i, .footer-wp:hover i, .footer-fb:hover i{
+    transform: rotateY(-180deg);
 }
 .footer-card h2 {
     font-size: 23px;
