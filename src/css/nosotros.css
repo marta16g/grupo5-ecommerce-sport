@@ -13,11 +13,11 @@ font-family: 'Noto Sans', sans-serif;
 
 body{
 background-color: var(--platinum);
-color: var(--night);
 }
 
 h1{
 margin-bottom: 15px;
+color: var(--night);
 }
 .container {
   min-height: 600px;
