@@ -99,6 +99,7 @@
               class="form-control"
               id="nombre"
               pattern="[a-z ,.'-]+$/i"
+              maxlength="10"
               required
             />
           </div>
@@ -109,6 +110,7 @@
               class="form-control"
               id="apellido"
               pattern="[a-z ,.'-]+$/i"
+              maxlength="10"
               required
             />
           </div>
@@ -120,6 +122,7 @@
             class="form-control"
             id="email"
             pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            maxlength="50"
             required
           />
         </div>
@@ -158,6 +161,7 @@
             id="direccion"
             placeholder="Siempre viva 123 ..."
             pattern="[a-zA-Z0-9-]+"
+            maxlength="50"
             required
           />
         </div>
@@ -170,6 +174,7 @@
               id="localidad"
               placeholder="Localidad..."
               pattern="[a-zA-Z0-9-]+"
+              maxlength="20"
               required
             />
           </div>
@@ -204,7 +209,7 @@
           </div>
           <div class="col-5 col-md-3">
             <label for="codpostal" class="form-label">Código Postal</label>
-            <input type="number" class="form-control" id="codpostal" required />
+            <input type="number" class="form-control" id="codpostal" required maxlength="5"/>
           </div>
         </div>
         <div
