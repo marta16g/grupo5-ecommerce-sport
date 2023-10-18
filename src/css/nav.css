@@ -142,7 +142,7 @@ nav{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 3rem;
+        width: 3.8rem;
         height: 3rem;
         border: 0;
         background-color: transparent;
@@ -175,7 +175,7 @@ nav{
         justify-content: center;
         list-style: none;
         top: 40px;
-        right: -50px;
+        right: -45px;
         margin: auto;
         background-color: var(--night);
         height: 200px;
@@ -209,6 +209,10 @@ nav{
     .session-link{
         display: block;
     }
+    .nav{
+        height: 100%;
+    }
+    
     .nav-links2{
         height: 230px;
         top: 50px;
