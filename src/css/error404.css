@@ -34,9 +34,8 @@ body{
     word-wrap: break-word;
 }
 .img-container{
-    max-height: 400px;
-    max-width: 400px;
-    overflow: hidden;
+    max-height: 600px;
+    max-width: 90%;
 }
 .card-body{
     display: flex;
@@ -47,8 +46,8 @@ body{
     gap: 20px;
 }
 .img404{
-    max-width: 600px;
     object-fit: cover;
+    object-position: 50% 100%;
 }
 .btn-dark{
 	background-color: var(--night);
