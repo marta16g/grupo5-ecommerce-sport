@@ -100,7 +100,6 @@
   margin-bottom: 18px;
   font-weight: 600;
   position: relative;
-  z-index: 10;
 }
 .footer-card h2::before, .footer-card h3::before {
   content: "";

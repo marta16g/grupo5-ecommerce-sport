@@ -47,7 +47,6 @@ body{
 }
 .img404{
     object-fit: cover;
-    object-position: 50% 100%;
 }
 .btn-dark{
 	background-color: var(--night);
@@ -70,7 +69,7 @@ body{
 }
 
 .button:active svg{
- fill: #000;
+    fill: #000;
 }
 /* FOOTER */
 
@@ -85,10 +84,9 @@ body{
 .social-buttons {
 	list-style: none;
     display: flex;
-gap: 16px;
-justify-content: flex-start;
+    gap: 16px;
+    justify-content: flex-start;
 }
-
 .social-buttons span{
     width: 40px;
     height: 40px;
@@ -98,21 +96,18 @@ justify-content: flex-start;
     transition: all 0.3s;
     border: 1px solid var(--primary-color);
 }
-
 .social-buttons a {
     width: 100%;
     height: 100%;
     color: var(--secondary-color);
-	 display: grid;
+	display: grid;
 	place-items: center;
 }
-
 .social-buttons span:hover {
     background-color: var(--secondary-color);
     border: 1px solid var(--primary-color);
     border-radius: 8px;
 }
-
 .social-buttons span a svg {
     height: 24px;
     width: 24px;
@@ -120,7 +115,6 @@ justify-content: flex-start;
     stroke-width: 1.75;
     transition: 0.8s;
 }
-
 .social-buttons span:hover svg {
     stroke: var(--primary-color);
     transform: rotateY(360deg);

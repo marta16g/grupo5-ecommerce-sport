@@ -3,23 +3,23 @@
     margin: 0;
     box-sizing: border-box;
 }
-header{
+#nav1{
     background-color: var(--night);
     display: grid;
     grid-template-columns: 1fr 150px 1fr;
     width: 100%;
     transition: all .3s;
 }
-.nav-logo{
+#nav1 .nav-logo{
     cursor: pointer;
     place-self: center;
 }
-.nav-logo img {
+#nav1 .nav-logo img{
     width: 100px;
     height:100px;
     transition: all .3s;
 }
-.nav-logo img:hover{
+#nav1 .nav-logo img:hover{
     transform: scale(1.15)
 }
 .nav-container{
@@ -30,10 +30,7 @@ header{
     border: 1px solid green;
     transition: all .3s;
 }
-.nav-burguer{
-    display: none;
-}
-.nav-links{
+.nav-desk .nav-links{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -42,23 +39,23 @@ header{
     height: 100%;
     border: 1px solid red
 }
-.nav-links li a{
+.nav-desk .nav-links li a{
     text-decoration: none;
     color: var(--platinum);
     transition: all .3s;
 }
-.nav-links li a:hover{
+.nav-desk .nav-links li a:hover{
     color: var(--green-erin);
     transform: scale(1.1);
 }
-.search{
+.nav-desk .search{
     display:flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
     border: 1px solid red;
 }
-.search input{
+.nav-desk .search input{
     position: relative;
     width: 40px;
     height: 40px;
@@ -75,14 +72,14 @@ header{
     background-size: 25px;
     background-position: 45% 50%;
 }
-.search input:hover{
+.nav-desk .search input:hover{
     cursor: pointer;
     border: 3px solid var(--green-erin);
     background: url('../img/img-404/lupa.svg') no-repeat var(--platinum);
     background-size: 30px;
     background-position: 45% 50%;
 }
-.search input:focus, .search input:not(:placeholder-shown){
+.nav-desk .search input:focus, .nav-desk .search input:not(:placeholder-shown){
     max-width: 300px;
     width: 100%;
     cursor: text;
@@ -115,7 +112,7 @@ header{
     transform: scale(1.1);
     cursor: pointer;
 } */
-.session{
+.nav-desk .session{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,21 +122,21 @@ header{
     border: 1px solid red;
 
 }
-.session a{
+.nav-desk .session a{
     text-decoration: none;
     color: var(--platinum);
     transition:  .3s;
 }
-.session a:hover{
+.nav-desk .session a:hover{
     color: var(--green-erin);
     transform: scale(1.1);
 }
-.link-carrito{
+.nav-desk .link-cart{
     position: relative;
     width: 35px;
     height: 35px;
 }
-.link-carrito::before{
+.nav-desk .link-cart::before{
     content:'2';
     width: 15px;
     height: 15px;
@@ -154,17 +151,22 @@ header{
     align-items: center;
     padding: 2px;
 }
-.carrito{
+.cart{
     position: relative;
     width: 100%;
     height: 100%;
     border-radius: 5px;
     padding: 5px;
 }
-.carrito:hover{
+.cart:hover{
     background-color: var(--green-erin);
 }
-@media screen and (min-width: 375px){
+@media screen and (max-width: 769px){
+    #nav1{
+        display: none;
+    }
+}
+/* @media screen and (min-width: 375px){
     header{
         display: flex;
         justify-content: space-between;
@@ -187,7 +189,7 @@ header{
     .nav{
         height: 100%;
     }
-    /* BURGUER MENU */
+
     .nav-burguer{
         display: flex;
         flex-direction: column;
@@ -223,41 +225,9 @@ header{
         background-color: var(--night);
         width: 50vw;
     }
-    /* .nav-links2{
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        align-items: center;
-        justify-content: center;
-        list-style: none;
-        margin: auto;
-        background-color: var(--night);
-        height: 100vh;
-        width: 50vw;
-        padding: 0;
-        z-index: 2;
-    }
-    .nav-links2 li{
-        width: 100%;
-        height: 100%;
-        border-bottom: 1px solid var(--platinum);
-    }
-    .nav-links2 li:hover{
-        background-color: var(--platinum);
-    }
-    .nav-links2 li:hover a{
-        color: var(--night);
-    }
-    .nav-links2 li a{
-        color: var(--platinum);
-        text-decoration: none;
-    }
-    .nav-burguer:hover .nav-links2, .nav-links2:hover{
-        display: flex;
-    } */
-}
+} */
 
-@media screen and (min-width: 700px) and (max-width: 800px){
+/* @media screen and (min-width: 700px) and (max-width: 800px){
     .header{
         grid-template-columns: 1fr 100px 1fr;
         place-items: center;
@@ -288,67 +258,4 @@ header{
     .search:hover + .nav-burguer{
         transform: translateX(-100px);
     }
-    /* .nav-burguer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 2.5rem;
-        height: 2rem;
-        border: 0;
-        background-color: transparent;
-        gap: .5rem;
-        cursor: pointer;
-        position: relative;
-    }
-    .nav-burguer > div {
-        background: var(--platinum);
-        height: .2rem;
-        width: 100%;
-        transition: all .5s;
-        transform-origin: left;
-    }
-    .nav-burguer:hover div:first-child{
-        transform: rotate(45deg);
-    }
-    .nav-burguer:hover div:nth-child(2){
-        opacity:0;
-    }
-    .nav-burguer:hover div:nth-child(3){
-        transform: rotate(-45deg);
-    }
-    .nav-links2{
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        align-items: center;
-        justify-content: center;
-        list-style: none;
-        top: 40px;
-        right: -45px;
-        margin: auto;
-        background-color: var(--night);
-        height: 200px;
-        width: 150px;
-        padding: 0;
-        z-index: 2;
-    }
-    .nav-links2 li{
-        width: 100%;
-        height: 100%;
-        border-bottom: 1px solid var(--platinum);
-    }
-    .nav-links2 li:hover{
-        background-color: var(--platinum);
-    }
-    .nav-links2 li:hover a{
-        color: var(--night);
-    }
-    .nav-links2 li a{
-        color: var(--platinum);
-        text-decoration: none;
-    }
-    .nav-burguer:hover .nav-links2, .nav-links2:hover{
-        display: flex;
-    } */
-}
+} */
