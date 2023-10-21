@@ -5,4 +5,79 @@
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
 }
-
+body {
+    background-color:#dddddd;
+}
+.container {
+    display: flex;
+    background-color: #121212;
+    height: 600px;
+    width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 25px;
+}
+.form {
+    padding: 30px 80px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.form h2 {
+    font-size: 45px;
+    color: #0eff53;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+label {
+    font-size: 15px;
+    color: #577d86;
+    margin-bottom: 15px;
+}
+.box {
+    border: 0;
+    background-color: #70f586;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    outline: none;
+}
+.submit {
+    background-color: #121212;
+    color: #0eff53;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+    width: 250px;
+    margin-top: 25px;
+    margin-left: 40px;
+    border: 4px #0eff53 inset;
+}
+.location {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.icons {
+    display: flex;
+    padding: 20px 40px;
+}
+.icons p {
+    font-size: 15px;
+    color: #577d86;
+    margin-left: 15px;
+    margin-top: -2px;
+}
+.fa-location-dot {
+    color: #0eff53;
+    font-size: 23px;
+}
+.fa-phone {
+    color: #0eff53;
+    font-size: 23px;
+}
+.fa-envelope {
+    color: #0eff53;
+    font-size: 23px;
+}
