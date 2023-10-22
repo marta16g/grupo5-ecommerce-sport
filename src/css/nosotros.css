@@ -24,15 +24,16 @@ color: var(--night);
   max-width: 900px;
 }
 .border {
-  height: 369px;
-  width: 290px;
+  height: 359px;
+  width: 280px;
   background: transparent;
   border-radius: 10px;
   transition: border .3s;
   position: relative;
+
 }
 .border:hover {
-  border: 3px solid red;
+  border: 2px solid var(--platinum);
 }
 .card-container{
   min-height: 400px;
@@ -126,7 +127,7 @@ filter: grayscale(0.3);
 }
 
 
-h2 {
+.card h2 {
   color: #fff;
   margin: 20px;
   opacity: 0;

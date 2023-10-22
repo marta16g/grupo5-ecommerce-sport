@@ -11,64 +11,69 @@
     <title>Energy Sport</title>
 </head>
   <body>   
-    <input type="checkbox" id="menu-burguer">
-    <label for="menu-burguer">
-          <span class="bar top"></span>
-          <span class="bar middle"></span>
-          <span class="bar bottom"></span>
-    </label>
     <header>
-      <nav>
-        <aside>
-            <div class="aside-section aside-left">
-                <div class="aside-content">
-                    <figure class="nav-logo mb-0">
-                        <img src="src/img/img-carrito/logo.png.png" alt="imagen de logo" width="80px"/>
-                    </figure>
-                    <section class="search">
-                        <input type="text" placeholder="" class="nav-input"/>
-                    </section>
-                    <div class="session">
-                        <a href="">Log In</a>
-                        <a href="src/html/registro.html">Registrarse</a>
-                        <a class="link-cart" href="src/html/carrito.html">
-                            <img
-                            class="cart"
-                            src="src/img/img-carrito/icons8-bolsa-de-compras-50 .png"
-                            alt="carrito de compras"
-                            width="30px"
-                            height="30px"
-                            />
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="aside-section aside-right">
-                <ul class="aside-list">
-                    <section class="search search-aside">
-                        <input type="text" placeholder="" class="nav-input"/>
-                        <a class="link-cart" href="src/html/carrito.html">
-                            <img
-                            class="cart"
-                            src="src/img/img-carrito/icons8-bolsa-de-compras-50 .png"
-                            alt="carrito de compras"
-                            width="35px"
-                            height="35px"
-                            />
-                        </a>
-                    </section>
-                    <li><a href="./index.html" class="aside-anchor">Inicio</a></li>
-                    <li><a href="./src/html/productos.html" class="aside-anchor">Productos</a></li>
-                    <li><a href="./src/html/nosotros.html" class="aside-anchor">Nosotros</a></li>
-                    <li><a href="./src/html/contacto.html" class="aside-anchor">Contacto</a></li>
-                    <hr>
-                    <div class="session show aside-session aside-list">
-                        <a href="" class="aside-anchor">Log In</a>
-                        <a href="src/html/registro.html" class="aside-anchor">Registrarse</a>
-                    </div>
-                </ul>
-            </div>
-        </aside>
+      <section class="nav-mobile">
+          <input type="checkbox" id="menu-burguer">
+          <label for="menu-burguer">
+              <span class="bar top"></span>
+              <span class="bar middle"></span>
+              <span class="bar bottom"></span>
+          </label>
+          <aside class="aside-section aside-right">
+              <ul class="aside-list">
+                  <figure class="nav-logo"></figure>
+                  <section class="aside-search">
+                      <input type="text" placeholder="" class="nav-input"/>
+                      <a class="link-cart" href="src/html/carrito.html">
+                          <img
+                          class="cart"
+                          src="src/img/img-carrito/icons8-bolsa-de-compras-50 .png"
+                          alt="carrito de compras"
+                          width="35px"
+                          height="35px"
+                          />
+                      </a>
+                  </section>
+                  <li><a href="./index.html" class="aside-anchor">Inicio</a></li>
+                  <li><a href="./src/html/productos.html" class="aside-anchor">Productos</a></li>
+                  <li><a href="./src/html/nosotros.html" class="aside-anchor">Nosotros</a></li>
+                  <li><a href="./src/html/contacto.html" class="aside-anchor">Contacto</a></li>
+                  <hr>
+                  <section class="aside-session">
+                      <a href="" class="">Iniciar Sesión</a>
+                      <a href="src/html/registro.html" class="">Registrarse</a>
+                  </section>
+              </ul>
+          </aside>
+      </section>
+      <nav class="nav-desk">
+          <figure class="nav-logo">
+          </figure>
+          <ul class="nav-links">
+              <li>
+                  <a href="../../index.html">Inicio</a>
+              </li>
+              <li>
+                  <a href="./src/html/nosotros.html">Nosotros</a>
+              </li>
+              <li>
+                  <a href="./src/html/contacto.html">Contacto</a>
+              </li>
+              <li>
+                  <a href="./src/html/productos.html">Productos</a>
+              </li>
+          </ul>
+          <section class="search">
+              <input type="text" placeholder="" />
+          </section>
+          <section class="session">
+              <a href="">Iniciar Sesión</a>
+              <a href="./src/html/registro.html">Registrarse</a>
+              <a class="link-cart" href="./src/html/carrito.html">
+                  <img class="cart" src="./src/img/img-carrito/icons8-bolsa-de-compras-50 .png" alt="carrito de compras" width="20px" height="20px"
+              />
+              </a>
+          </section>
       </nav>
     </header>
     <main>

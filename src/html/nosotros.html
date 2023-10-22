@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" data-bs-theme="dark">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,79 +15,76 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link href="../css/nosotros.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     <link href="../css/footer.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <div class="nav-logo">
-        <img src="../img/img-carrito/logo.png.png" alt="imagen de logo" />
-      </div>
-      <nav>
-        <ul class="nav-links">
-            <li>
-                <a href="../../index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="./nosotros.html">Nosotros</a>
-            </li>
-            <li>
-                <a href="./contacto.html">Contacto</a>
-            </li>
-            <li>
-                <a href="./productos.html">Productos</a>
-            </li>
-        </ul>
-        <button class="nav-burguer">
-            <div></div>
-            <div></div>
-            <div></div>
-            <ul class="nav-links2">
-                <li>
-                    <a href="../../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="./productos.html">Productos</a>
-                </li>
-                <li class="session-link">
-                    <a href="#">Iniciar</a>
-                </li>
-                <li class="session-link">
-                    <a href="./registro.html">Registrarse</a>
-                </li>
-                <li class="session-link">
-                    <a href="./carrito.html">Carrito</a>
-                </li>
-            </ul>
-        </button>
-        <section class="search">
-            <input type="text" placeholder="Que estas buscando?..." />
-            <figure>
-                <img src="../img/img-404/lupa.svg" alt="foto de lupa" />
-            </figure>
-        </section>
-        <section class="session">
-            <a href="">Iniciar</a>
-            <a href="./registro.html">Registrarse</a>
-            <a class="link-carrito" href="./carrito.html">
-                <img
-                class="carrito"
-                src="../img/img-carrito/icons8-bolsa-de-compras-50 .png"
-                alt="carrito de compras"
-              width="30px"
-              height="30px"
+      <section class="nav-mobile">
+          <input type="checkbox" id="menu-burguer">
+          <label for="menu-burguer" id="">
+              <span class="bar top"></span>
+              <span class="bar middle"></span>
+              <span class="bar bottom"></span>
+          </label>
+          <aside class="aside-section aside-right">
+              <ul class="aside-list">
+                  <figure class="nav-logo"></figure>
+                  <section class="aside-search">
+                      <input type="text" placeholder="" class="nav-input"/>
+                      <a class="link-cart" href="./carrito.html">
+                          <img
+                          class="cart"
+                          src="../img/img-carrito/icons8-bolsa-de-compras-50 .png"
+                          alt="carrito de compras"
+                          width="35px"
+                          height="35px"
+                          />
+                      </a>
+                  </section>
+                  <li><a href="./../../index.html" class="aside-anchor">Inicio</a></li>
+                  <li><a href="./productos.html" class="aside-anchor">Productos</a></li>
+                  <li><a href="./nosotros.html" class="aside-anchor">Nosotros</a></li>
+                  <li><a href="./contacto.html" class="aside-anchor">Contacto</a></li>
+                  <hr>
+                  <section class="aside-session">
+                      <a href="" class="">Iniciar Sesión</a>
+                      <a href="./registro.html" class="">Registrarse</a>
+                  </section>
+              </ul>
+          </aside>
+      </section>
+      <nav class="nav-desk">
+          <figure class="nav-logo">
+          </figure>
+          <ul class="nav-links">
+              <li>
+                  <a href="../../index.html">Inicio</a>
+              </li>
+              <li>
+                  <a href="./nosotros.html">Nosotros</a>
+              </li>
+              <li>
+                  <a href="./contacto.html">Contacto</a>
+              </li>
+              <li>
+                  <a href="./productos.html">Productos</a>
+              </li>
+          </ul>
+          <section class="search">
+              <input type="text" placeholder="" />
+          </section>
+          <section class="session">
+              <a href="">Iniciar Sesión</a>
+              <a href="./registro.html">Registrarse</a>
+              <a class="link-cart" href="./carrito.html">
+                  <img class="cart" src="./../img/img-carrito/icons8-bolsa-de-compras-50 .png" alt="carrito de compras" width="20px" height="20px"
               />
-            </a>
-        </section>
+              </a>
+          </section>
       </nav>
     </header>
-    <h1 class="text-center m-auto mb-4">Nuestra Historia</h1>
+    <h1 class="text-center m-auto mb-4 mt-4">Nuestra Historia</h1>
     <main class="container d-flex flex-column mb-4">
       <section class="text-dark fw-bold d-flex flex-column justify-content-center">
         <article
@@ -112,6 +109,7 @@
             ofrecemos productos que potencian el rendimiento y la confianza en
             el campo, la cancha o el gimnasio.
           </p>
+          <h2 class="text-center m-auto mb-4 mt-4">Compromiso</h2>
           <p>
             Nuestro compromiso es brindar a nuestros clientes la mejor selección
             de marcas de renombre y productos de alta calidad, respaldado por un

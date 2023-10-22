@@ -93,16 +93,16 @@ form label{
     gap: 10px;
     margin-left:20px;
 }
-input[type=checkbox]:checked{
+.form-check-input[type=checkbox]:checked{
     background-color: var(--green-erin);
     color: var(--night);
     outline: none;
     border: 1px solid var(--night);
 }
-input[type=checkbox]{
+.form-check-input[type=checkbox]{
     font-size: 20px;
 }
-.registrar{
+.reg-confirm{
     background-color: var(--night);
     color: var(--green-erin);
     font-weight: bold;
@@ -111,11 +111,11 @@ input[type=checkbox]{
     cursor: pointer;
     width: 150px;
 }
-.registrar:active, .registrar:visited, .registrar:hover{
+.reg-confirm:active, .reg-confirm:visited, .reg-confirm:hover{
     background-color: var(--green-erin);
     color: var(--night);
 }
-.registrar:active{
+.reg-confirm:active{
     top:1px;
 }
 
@@ -127,16 +127,16 @@ input[type=checkbox]{
     }
 }
 @media screen and (min-width: 660px){
-    .identidad{
+    .reg-info{
         display: flex;
         justify-content: flex-start;
         align-items: center;
         gap: 50px;
     }
-    .identidad input[type=text]{
+    .reg-info input[type=text]{
         width: 290px;
     }
-    .localizacion{
+    .address{
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -158,10 +158,10 @@ input[type=checkbox]{
     }
 }
 @media screen and (min-width: 992px){
-    .identidad{
+    .reg-info{
         gap: 45px;
     }
-    .identidad input[type=text]{
+    .reg-info input[type=text]{
         width: 230px;
     }
 }

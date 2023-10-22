@@ -10,109 +10,18 @@
     <link rel="stylesheet" href="../css/navbar.css">
   </head>
 <body class="">
-  <!-- <header>
-    <div class="nav-logo">
-      <img src="../img/img-carrito/logo.png.png" alt="imagen de logo" />
-    </div>
-    <nav>
-      <ul class="nav-links">
-          <li>
-              <a href="../../index.html">Inicio</a>
-          </li>
-          <li>
-              <a href="./nosotros.html">Nosotros</a>
-          </li>
-          <li>
-              <a href="./contacto.html">Contacto</a>
-          </li>
-          <li>
-              <a href="./productos.html">Productos</a>
-          </li>
-      </ul>
-      <button class="nav-burguer">
-          <div></div>
-          <div></div>
-          <div></div>
-          <ul class="nav-links2">
-              <li>
-                  <a href="../../index.html">Inicio</a>
-              </li>
-              <li>
-                  <a href="./nosotros.html">Nosotros</a>
-              </li>
-              <li>
-                  <a href="./contacto.html">Contacto</a>
-              </li>
-              <li>
-                  <a href="./productos.html">Productos</a>
-              </li>
-              <li class="session-link">
-                  <a href="#">Iniciar</a>
-              </li>
-              <li class="session-link">
-                  <a href="./registro.html">Registrarse</a>
-              </li>
-              <li class="session-link">
-                  <a href="./carrito.html">Carrito</a>
-              </li>
-          </ul>
-      </button>
-      <section class="search">
-          <input type="text" placeholder="Que estas buscando?..." />
-          <figure>
-              <img src="../img/img-404/lupa.svg" alt="foto de lupa" />
-          </figure>
-      </section>
-      <section class="session">
-          <a href="">Iniciar</a>
-          <a href="./registro.html">Registrarse</a>
-          <a class="link-carrito" href="./carrito.html">
-              <img
-              class="carrito"
-              src="../img/img-carrito/icons8-bolsa-de-compras-50 .png"
-              alt="carrito de compras"
-            width="30px"
-            height="30px"
-            />
-          </a>
-      </section>
-    </nav>
-  </header> -->
-  <input type="checkbox" id="menu-burguer">
-    <label for="menu-burguer">
-          <span class="bar top"></span>
-          <span class="bar middle"></span>
-          <span class="bar bottom"></span>
-    </label>
     <header>
-      <nav>
-        <aside>
-            <div class="aside-section aside-left">
-                <div class="aside-content">
-                    <figure class="nav-logo mb-0">
-                        <img src="../img/img-carrito/logo.png.png" alt="imagen de logo" width="80px"/>
-                    </figure>
-                    <section class="search">
-                        <input type="text" placeholder="" class="nav-input"/>
-                    </section>
-                    <div class="session">
-                        <a href="">Log In</a>
-                        <a href="./registro.html">Registrarse</a>
-                        <a class="link-cart" href="./carrito.html">
-                            <img
-                            class="cart"
-                            src="../img/img-carrito/icons8-bolsa-de-compras-50 .png"
-                            alt="carrito de compras"
-                            width="30px"
-                            height="30px"
-                            />
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="aside-section aside-right">
+        <section class="nav-mobile">
+            <input type="checkbox" id="menu-burguer">
+            <label for="menu-burguer">
+                <span class="bar top"></span>
+                <span class="bar middle"></span>
+                <span class="bar bottom"></span>
+            </label>
+            <aside class="aside-section aside-right">
                 <ul class="aside-list">
-                    <section class="search search-aside">
+                    <figure class="nav-logo"></figure>
+                    <section class="aside-search">
                         <input type="text" placeholder="" class="nav-input"/>
                         <a class="link-cart" href="./carrito.html">
                             <img
@@ -124,21 +33,49 @@
                             />
                         </a>
                     </section>
-                    <li><a href="../../index.html" class="aside-anchor">Inicio</a></li>
+                    <li><a href="./../../index.html" class="aside-anchor">Inicio</a></li>
                     <li><a href="./productos.html" class="aside-anchor">Productos</a></li>
                     <li><a href="./nosotros.html" class="aside-anchor">Nosotros</a></li>
                     <li><a href="./contacto.html" class="aside-anchor">Contacto</a></li>
                     <hr>
-                    <div class="session show aside-session aside-list">
-                        <a href="" class="aside-anchor">Log In</a>
-                        <a href="./registro.html" class="aside-anchor">Registrarse</a>
-                    </div>
+                    <section class="aside-session">
+                        <a href="" class="">Iniciar Sesión</a>
+                        <a href="./registro.html" class="">Registrarse</a>
+                    </section>
                 </ul>
-            </div>
-        </aside>
-      </nav>
-    </header>
-  <div class="row">
+            </aside>
+        </section>
+        <nav class="nav-desk">
+            <figure class="nav-logo">
+            </figure>
+            <ul class="nav-links">
+                <li>
+                    <a href="../../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="./productos.html">Productos</a>
+                </li>
+            </ul>
+            <section class="search">
+                <input type="text" placeholder="" />
+            </section>
+            <section class="session">
+                <a href="">Iniciar Sesión</a>
+                <a href="./registro.html">Registrarse</a>
+                <a class="link-cart" href="./carrito.html">
+                    <img class="cart" src="../img/img-carrito/icons8-bolsa-de-compras-50 .png" alt="carrito de compras" width="20px" height="20px"
+                />
+                </a>
+            </section>
+        </nav>
+      </header>
+    <div class="row">
       <div class="col-12">
           <div class="card shadow-lg" >
               <h3 class="card-title">

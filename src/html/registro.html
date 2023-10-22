@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" data-bs-theme="dark">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,82 +16,80 @@
     />
     <link href="../css/registro.css" rel="stylesheet">
     <link href="../css/footer.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/navbar.css">
   </head>
   <body>
     <header>
-      <div class="nav-logo">
-        <img src="../img/img-carrito/logo.png.png" alt="imagen de logo" />
-      </div>
-      <nav>
-        <ul class="nav-links">
-            <li>
-                <a href="../../index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="./nosotros.html">Nosotros</a>
-            </li>
-            <li>
-                <a href="./contacto.html">Contacto</a>
-            </li>
-            <li>
-                <a href="./productos.html">Productos</a>
-            </li>
-        </ul>
-        <button class="nav-burguer">
-            <div></div>
-            <div></div>
-            <div></div>
-            <ul class="nav-links2">
-                <li>
-                    <a href="../../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="./productos.html">Productos</a>
-                </li>
-                <li class="session-link">
-                    <a href="#">Iniciar</a>
-                </li>
-                <li class="session-link">
-                    <a href="./registro.html">Registrarse</a>
-                </li>
-                <li class="session-link">
-                    <a href="./carrito.html">Carrito</a>
-                </li>
-            </ul>
-        </button>
-        <section class="search">
-            <input type="text" placeholder="Que estas buscando?..." />
-            <figure>
-                <img src="../img/img-404/lupa.svg" alt="foto de lupa" />
-            </figure>
-        </section>
-        <section class="session">
-            <a href="">Iniciar</a>
-            <a href="./registro.html">Registrarse</a>
-            <a class="link-carrito" href="./carrito.html">
-                <img
-                class="carrito"
-                src="../img/img-carrito/icons8-bolsa-de-compras-50 .png"
-                alt="carrito de compras"
-              width="30px"
-              height="30px"
+      <section class="nav-mobile">
+          <input type="checkbox" id="menu-burguer">
+          <label for="menu-burguer" id="label-mobile">
+              <span class="bar top"></span>
+              <span class="bar middle"></span>
+              <span class="bar bottom"></span>
+          </label>
+          <aside class="aside-section aside-right">
+              <ul class="aside-list">
+                  <figure class="nav-logo"></figure>
+                  <section class="aside-search">
+                      <input type="text" placeholder="" class="nav-input"/>
+                      <a class="link-cart" href="./carrito.html">
+                          <img
+                          class="cart"
+                          src="../img/img-carrito/icons8-bolsa-de-compras-50 .png"
+                          alt="carrito de compras"
+                          width="35px"
+                          height="35px"
+                          />
+                      </a>
+                  </section>
+                  <li><a href="./../../index.html" class="aside-anchor">Inicio</a></li>
+                  <li><a href="./productos.html" class="aside-anchor">Productos</a></li>
+                  <li><a href="./nosotros.html" class="aside-anchor">Nosotros</a></li>
+                  <li><a href="./contacto.html" class="aside-anchor">Contacto</a></li>
+                  <hr>
+                  <section class="aside-session">
+                      <a href="" class="">Iniciar Sesión</a>
+                      <a href="./registro.html" class="">Registrarse</a>
+                  </section>
+              </ul>
+          </aside>
+      </section>
+      <nav class="nav-desk">
+          <figure class="nav-logo">
+          </figure>
+          <ul class="nav-links">
+              <li>
+                  <a href="../../index.html">Inicio</a>
+              </li>
+              <li>
+                  <a href="./nosotros.html">Nosotros</a>
+              </li>
+              <li>
+                  <a href="./contacto.html">Contacto</a>
+              </li>
+              <li>
+                  <a href="./productos.html">Productos</a>
+              </li>
+          </ul>
+          <section class="search">
+              <input type="text" placeholder="" />
+          </section>
+          <section class="session">
+              <a href="">Iniciar Sesión</a>
+              <a href="./registro.html">Registrarse</a>
+              <a class="link-cart" href="./carrito.html">
+                  <img class="cart" src="./../img/img-carrito/icons8-bolsa-de-compras-50 .png" alt="carrito de compras" width="20px" height="20px"
               />
-            </a>
-        </section>
+              </a>
+          </section>
       </nav>
     </header>
-    <section class="container container-fluid d-flex justify-content-center">
+    <h1 class="text-center mb-3 mt-3">Registro</h1>
+    <main class="container container-fluid d-flex justify-content-center">
       <form
         class="form-container col-lg-6 p-2 fw-semibold d-flex flex-column gap-1"
       >
-        <div class="identidad">
+        <section class="reg-info">
           <div class="col-10 col-md-5">
             <label for="nombre" class="form-label">Nombre</label>
             <input
@@ -116,8 +114,8 @@
               required
             />
           </div>
-        </div>
-        <div class="col-10 col-md-12">
+        </section>
+        <section class="col-10 col-md-12">
           <label for="email" class="form-label">Email</label>
           <input
             type="email"
@@ -128,8 +126,8 @@
             minlength="6"
             required
           />
-        </div>
-        <div class="col-12 passwords d-flex flex-column">
+        </section>
+        <section class="col-12 passwords d-flex flex-column">
           <div class="col-10 col-lg-5">
             <label for="password" class="form-label">Password</label>
             <input
@@ -155,8 +153,8 @@
               required
             />
           </div>
-        </div>
-        <div class="col-10 col-md-12">
+        </section>
+        <section class="col-10 col-md-12">
           <label for="direccion" class="form-label">Dirección</label>
           <input
             type="text"
@@ -168,9 +166,9 @@
             minlength="6"
             required
           />
-        </div>
-        <div class="localizacion">
-          <div class="col-10 col-md-3">
+        </section>
+        <section class="address">
+          <div class="col-10 col-md-4">
             <label for="localidad" class="form-label">Localidad</label>
             <input
               type="text"
@@ -183,7 +181,7 @@
               required
             />
           </div>
-          <div class="col-10 col-md-3">
+          <div class="col-10 col-md-4">
             <label for="provincia" class="form-label">Provincia</label>
             <select id="provincia" class="form-select" required>
               <option>Selecciona tu provincia...</option>
@@ -216,8 +214,8 @@
             <label for="codpostal" class="form-label">Código Postal</label>
             <input type="number" class="form-control" id="codpostal" required maxlength="5"/>
           </div>
-        </div>
-        <div
+        </section>
+        <section
           class="col-12 mt-4 d-flex flex-column justify-content-start align-items-center"
         >
           <div class="form-check">
@@ -225,16 +223,17 @@
               class="form-check-input"
               type="checkbox"
               id="humano"
+              checked
               required
             />
             <label class="form-check-label" for="humano"> Soy humano </label>
           </div>
           <div class="col-md-12 d-flex justify-content-center mt-3">
-            <button type="submit" class="btn registrar col-md-6">
+            <button type="submit" class="btn reg-confirm col-md-6">
               Registrarse
             </button>
           </div>
-        </div>
+        </section>
       </form>
       <article class="col-md-6 img-container p2">
         <figure class="img1">
@@ -253,8 +252,7 @@
           <img src="../img/img-reg/5.jpg" alt="" width="300" />
         </figure>
       </article>
-      <div class="lightning"></div>
-    </section>
+    </main>
     <footer class="footer">
       <section class="footer-group1">
           <figure class="footer-logo">

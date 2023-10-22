@@ -1,211 +1,279 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+@import url('[https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap]');
 
 :root{
-    --night: #121212;
-    --green-erin: #0EEF53;
-    --platinum: #DDDDDD;
-    --light-blue: #B9EDDD;
-    --tiffany-blue: #87CBB9;
-    --slate-gray: #577D86;
-    font-family: 'Noto Sans', sans-serif;
+--night: #121212;
+--green-erin: #0EEF53;
+--platinum: #DDDDDD;
+--light-blue: #B9EDDD;
+--tiffany-blue: #87CBB9;
+--slate-gray: #577D86;
+font-family: 'Noto Sans', sans-serif;
 }
-.header{
-  background-color: var(--night);
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  position: fixed;
-  top: 0;
-  left: -100%;
-  z-index: 5;
-  overflow: hidden;
-  transition: right .5s;
-  display: none;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    }
+
+header{
+    height: 110px;
+    width: 100%;
+    background-color: var(--night);
 }
-.nav-mobile{
-  height: 100%;
-  position: relative;
-  overflow: hidden;
+header a{
+    color: var(--platinum);
+    text-decoration: none;
 }
-.nav-mobile .aside-section {
-  top: 0;
-  bottom: 0;
-  position: absolute;
-}
-.nav-mobile .aside-left {
-  display: none;
-  width: 40%;
-  left: 0;
-  background-color: var(--night);
-  transform: translateY(-100%);
-  transition: transform .7s ease-in-out;
-}
-.nav-mobile .aside-right {
-  width: 100%;
-  right: 0;
-  background-color: var(--green-erin);
-  transform: translateX(100%);
-  transition: transform 0.4s ease-in-out;
-}
-.nav-mobile .nav-logo{
-    cursor: pointer;
-    place-self: center;
-}
-.nav-mobile .nav-logo img {
-    width: 200px;
-    height:200px;
+.nav-desk{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 100px 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px 25px;
+    height: 100%;
     transition: all .3s;
 }
-.nav-mobile .nav-logo img:hover{
-    transform: scale(1.15)
+.nav-logo{
+    background-image: url('./../img/img-carrito/logo.png.png');
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 100%;
+    background-size: 140px;
+    background-position: 50% 60%;
 }
-.nav-mobile .aside-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-top: 100px;
-  text-align: left;
-  padding-left: 50px;
+.nav-desk a:is(:hover){
+    background-color: var(--platinum);
+    color: var(--night);
+    border: 2px solid var(--platinum);
+    padding: 5px 5px;
+    font-weight: 600;
 }
-.nav-mobile .aside-content {
-  margin-top: 50px;
-  padding: 0 40px;
-  position: relative;
-  color: var(--night);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-.nav-mobile .aside-list li {
-  margin-bottom: 20px;
-}
-.nav-mobile .aside-anchor::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  background-color: var(--slate-gray);
-  left: 0;
-  right: 0;
-  height: 3px;
-  border-radius: 3px;
-}
-.nav-mobile .aside-anchor::before {
-  border-radius: 3px;
-  content: "";
-  position: absolute;
-  bottom: 0;
-  background-color: var(--light-blue);
-  left: 0;
-  height: 3px;
-  z-index: 1;
-  width: 50%;
-  transition: transform 0.2s ease-in-out;
-}
-.nav-mobile .aside-anchor:hover:before {
-  transform: translateX(100%);
-}
-.nav-mobile .aside-anchor {
-  padding-bottom: 7px;
-  color: var(--night);
-  text-decoration: none;
-  font-size: 30px;
-  position: relative;
-  font-weight: 500;
-}
-
-input[type="checkbox"] {
-  display: none;
-}
-input[type="checkbox"]:checked ~ .header{
-  left: 0;
-}
-input[type="checkbox"]:checked ~ .header .nav-mobile aside .aside-left {
-  transform: translateY(0%);
-}
-input[type="checkbox"]:checked ~ .header .nav-mobile aside .aside-right {
-  transform: translateX(0%);
-}
-input[type="checkbox"]:checked ~ label .top {
-  transform: translateY(0px) rotateZ(45deg);
-}
-input[type="checkbox"]:checked ~ label{
-  display: block;
-  padding-top: 18px;
-}
-input[type="checkbox"]:checked ~ label .bottom {
-  transform: translateY(-15px) rotateZ(-45deg);
-}
-input[type="checkbox"]:checked ~ label .middle {
-  width: 0;
-}
-.middle {
-  margin: 0 auto;
-}
-
-label {
-  top: 0;
-  display: inline-block;
-  background-color: var(--night);
-  border-radius: 20px;
-  cursor: pointer;
-  margin: 10px;
-  width: 50px;
-  height: 50px;
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-  position: fixed;
-}
-.bar {
-  display: block;
-  background-color: var(--platinum);
-  width: 30px;
-  height: 3px;
-  border-radius: 5px;
-  margin: 5px auto;
-  transition: background-color 0.4s ease-in, transform 0.4s ease-in,
-    width 0.4s ease-in;
-}
-.nav-mobile .session{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.nav-desk a, .nav-desk li > a{
+    transition: all .3s;
     position: relative;
+    border: 2px solid transparent;
+}
+.nav-desk .nav-logo{
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+.nav-desk .nav-links{
+    list-style: none;
+    grid-row: 2;
+    grid-column: 2 / span 2;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     gap: 20px;
+    align-self: baseline;
     height: 100%;
 }
-.nav-mobile .session a{
-    text-decoration: none;
-    transition:  .3s;
-    color: var(--platinum);
+.nav-desk .search, .nav-desk .session{
+    grid-row: 1;
 }
-.nav-mobile .aside-session{
+.nav-desk .search{
+    grid-column: 2 / 4;
+    width: 100%;
+    justify-self: end;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+.nav-desk .search input{
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 20px;
+    background-image: url('./../img/img-404/lupa.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 20px;
+    transition: all .5s;
+    outline: none;
+    cursor: pointer;
+}
+.nav-desk input:focus{
+    background-position: 95% 50%;
+    cursor: text;
+    background-size: 25px;
+    border: 2px solid var(--green-erin);
+}
+.nav-desk .session{
+    max-width: 250px;
+    grid-column: 4;
+    grid-row: span 2;
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.nav-desk .link-cart{
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid var(--platinum);
+}
+.nav-desk .link-cart:hover{
+    background-color: var(--green-erin);
+    border: 1px solid var(--green-erin);
+}
+.nav-desk .link-cart::before{
+    content:'2';
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+@media screen and (max-width: 700px){
+    .nav-desk{
+        display: none;
+    }
+    header{
+        position: absolute;
+        top: 0;
+        background-color: transparent;
+    }
+}
+@media screen and (min-width: 701px){
+    .nav-mobile{
+        display: none;
+    }
+}
+@media screen and (min-width: 1000px){
+    header{
+        height: 110px;
+        width: 100%;
+    }
+    .nav-desk{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .nav-desk .nav-links{
+        width: 350px;
+    }
+    .nav-desk .search{
+        width: 250px;
+    }
+    .nav-desk .session{
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        width: 350px;
+        justify-content: flex-end;
+    }
+}
+
+/* -------------------------------------------------------------- *//* MOBILE MENU */
+
+/* BURGUER MENU */
+.nav-mobile > label{
+    top: 0;
+    background-color: var(--night);
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    padding-left: 0;
-    margin-top: 0;
+    align-items: center;
+    z-index: 20;
+    position: fixed;
 }
-hr{
-    height: 5px;
-    background: linear-gradient(to right, var(--slate-gray) 50%, var(--light-blue) 50%);
-    width: 80%;
-    margin: 35px auto 20px auto;
+.bar{
+    display: block;
+    background-color: var(--platinum);
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    margin: 4px auto;
+    transition: background-color 0.4s ease-in, transform 0.3s ease-in,
+        width 0.3s ease-in;
 }
-.nav-mobile .aside-session a{
-    color: var(--night);
+.nav-mobile input[type="checkbox"] {
+    display: none;
 }
-.nav-mobile .session a:hover{
-    color: var(--light-blue);
-    transform: scale(1.1);
+.nav-mobile input[type="checkbox"]:checked ~ aside{
+    transform: translateX(0);
 }
+.nav-mobile input[type="checkbox"]:checked body:has(main){
+    overflow: hidden;
+}
+.nav-mobile input[type="checkbox"]:checked ~ .nav-mobile aside .aside-right {
+    transform: translateX(0%);
+}
+.nav-mobile input[type="checkbox"]:checked ~ #label-mobile .top {
+    transform: translateY(0px) rotateZ(45deg);
+}
+.nav-mobile input[type="checkbox"]:checked ~ #label-mobile{
+    display: block;
+    padding-top: 18px;
+}
+.nav-mobile input[type="checkbox"]:checked ~ #label-mobile .bottom {
+    transform: translateY(-15px) rotateZ(-45deg);
+}
+.nav-mobile input[type="checkbox"]:checked ~ #label-mobile .middle {
+    width: 0;
+}
+.middle {
+    margin: 0 auto;
+}
+/* MENU BODY */
+.nav-mobile{
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 16px;
+    overflow: hidden;
+}
+.nav-mobile aside{
+    position: absolute;
+    top: 0;
+    right:0;
+    bottom:0;
+    height: 100%;
+    background-color: var(--green-erin);
+    width: 80vw;
+    transform: translateX(100%);
+    transition: all .3s;
+    z-index: 10;
+    overflow: hidden;
+}
+/* LOGO */
+.nav-mobile .nav-logo{
+    cursor: pointer;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--night);
+    background-image: url('./../img/img-carrito/logo.png.png');
+    background-repeat: no-repeat;
+    background-size: 140px;
+    background-position: 50% 70%;
+    overflow: hide;
+}
+/* SEARCH SECTION */
 .nav-mobile .link-cart{
     position: relative;
     width: 35px;
@@ -234,109 +302,86 @@ hr{
     padding: 5px;
     background-color: var(--night);
 }
-.nav-mobile .cart:hover{
-    background-color: var(--green-erin);
-}
-.nav-mobile .search{
+.nav-mobile .aside-search{
     display:flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 5px;
     align-items: center;
-    margin-top: -20px;
 }
-.nav-mobile .search input{
+.nav-mobile .aside-search input{
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 40px;
     border-radius: 20px;
     cursor: pointer;
     font-size: 20px;
     border: 2px solid var(--green-erin);
+    color: var(--night);
     transition: all .3s;
     overflow: hidden;
-    background: url('./src/img/img-404/lupa.svg') no-repeat var(--platinum);
+    background-image: url('./../img/img-404/lupa.svg'); 
+    background-repeat: no-repeat;
+    background-color: var(--platinum);
     background-size: 25px;
-    background-position: 95% 50%;
+    background-position: 50% 50%;
 }
-.nav-mobile .search input:hover{
-    cursor: pointer;
-    border: 3px solid var(--green-erin);
-    background: url('./src/img/img-404/lupa.svg') no-repeat var(--platinum);
-    background-size: 35px;
+.nav-mobile .aside-search input:focus{
     background-position: 95% 50%;
-}
-.nav-mobile .search input:focus, .search input:not(:placeholder-shown){
-    max-width: 300px;
-    width: 100%;
     cursor: text;
+    background-size: 20px;
     padding-left: 10px;
-    color: var(--night);
+    border: 2px solid var(--platinum);
     outline: none;
-    transition: all .3s;
-    border: 3px solid var(--green-erin);
-    background: url('../img/img-404/lupa.svg') no-repeat var(--platinum);
-    background-size: 30px;
-    background-position: 95% 50%;
 }
-.nav-mobile .search-aside{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 25px;
-    gap: 10px;
-    max-width: 90%;    
-}
-.nav-mobile .search-aside input{
-    border: 3px solid var(--slate-gray);
-    width: 80%;
-}
-.nav-mobile .search-aside input:focus, .nav-mobile .search-aside input:not(:placeholder-shown), .nav-mobile .search-aside input:hover{
-  border: 1px solid var(--slate-gray);
-  max-width: 80%;
-}
-@media screen and (max-width: 768px){
-  /* label{
-    width: 100%;
-    height: 50px;
+/* LINKS LIST */
+.nav-mobile .aside-list{
+    list-style: none;
+    margin-top: 120px;
+    text-align: left;
+    padding-left: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin:0;
-    border-radius: 0;
-    margin-bottom: 350px;
-    border: 1px solid red;
-    padding-left: 75%;
-  }
-  .bar{
-    width: 50px;
-  }
-  .row{
-    margin-top: 70px;
-  } */
-  .header{
-    display: block;
-  }
-  label{
-    display: flex;
-  }
+    gap: 20px;
 }
-/* @media (min-width: 992px) {
-    hr{
-        display: none;
-    }
-    h1 {
-      font-size: 40px;
-    }
-    .aside-left {
-      display: block;
-    }
-    .aside-right {
-      width: 60%;
-    }
-    .show{
-      display: none;
-    }
-    .search-aside{
-      display: none;
-    }
-} */
+.nav-mobile .aside-anchor::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-color: var(--slate-gray);
+    left: 0;
+    right: 0;
+    height: 2px;
+    border-radius: 3px;
+}
+.nav-mobile .aside-anchor::before {
+    border-radius: 3px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-color: var(--light-blue);
+    left: 0;
+    height: 2px;
+    z-index: 1;
+    width: 50%;
+}
+.nav-mobile .aside-anchor {
+    padding-bottom: 2px;
+    color: var(--night);
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    font-weight: 500;
+}
+/* SESSION LINKS */
+.aside-session{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    font-size: 25px;
+}
+.aside-session a{
+    color: var(--night);
+    font-weight: 500;
+}
+
