@@ -15,15 +15,15 @@ body{
 background-color: var(--platinum);
 }
 
-h1{
-margin-bottom: 15px;
-color: var(--night);
-}
 .container {
   min-height: 600px;
   max-width: 900px;
 }
-.border {
+.container h1{
+margin-bottom: 15px;
+color: var(--night);
+}
+.border{
   height: 359px;
   width: 280px;
   background: transparent;
@@ -168,7 +168,7 @@ gap:10px;
     flex-direction: row;
     overflow-x: scroll;
     overflow-y: hidden;
-    width: 400px;
+    width: 350px;
     gap: 10px;
     padding: 15px;
     scroll-snap-align: center;

@@ -1,5 +1,6 @@
 .footer {
   background-color: var(--night);
+  width: 100%;
 }
 .footer-logo img {
   width: 100px;
