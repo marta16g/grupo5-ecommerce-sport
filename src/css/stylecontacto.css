@@ -23,6 +23,17 @@ body {
     width: 50%;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+.form::before {
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #0eff53;
 }
 .form h2 {
     font-size: 45px;
@@ -56,12 +67,12 @@ label {
 }
 .location {
     display: flex;
+    position: relative;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 20px;
 }
 .icons {
     display: flex;
+    margin-top: 20px;
     padding: 20px 40px;
 }
 .icons p {
@@ -81,4 +92,9 @@ label {
 .fa-envelope {
     color: #0eff53;
     font-size: 23px;
+}
+.maps {
+    position: absolute;
+    margin-top: 255px;
+    margin-left: 43px;
 }
