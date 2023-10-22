@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/login.css">
     <title>Energy Sport - Ofertas</title>
 </head>
 <body>
@@ -33,13 +34,13 @@
                             />
                         </a>
                     </section>
-                    <li><a href="./../../index.html" class="aside-anchor">Inicio</a></li>
+                    <li><a href="../../index.html" class="aside-anchor">Inicio</a></li>
                     <li><a href="./productos.html" class="aside-anchor">Productos</a></li>
                     <li><a href="./nosotros.html" class="aside-anchor">Nosotros</a></li>
                     <li><a href="./contacto.html" class="aside-anchor">Contacto</a></li>
                     <hr>
                     <section class="aside-session">
-                        <a href="" class="">Iniciar Sesión</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Iniciar Sesión</a>
                         <a href="./registro.html" class="">Registrarse</a>
                     </section>
                 </ul>
@@ -66,7 +67,9 @@
                 <input type="text" placeholder="" />
             </section>
             <section class="session">
-                <a href="">Iniciar Sesión</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">
+                  Iniciar Sesión
+                </a>
                 <a href="./registro.html">Registrarse</a>
                 <a class="link-cart" href="./carrito.html">
                     <img class="cart" src="../img/img-carrito/icons8-bolsa-de-compras-50 .png" alt="carrito de compras" width="20px" height="20px"
@@ -74,6 +77,48 @@
                 </a>
             </section>
         </nav>
+        <!-- Modal -->
+        <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modal-iniciar-sesion aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modal-iniciar-sesion">Iniciar Sesión</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form action="#" class="form-container">
+                  <div class="col-12">
+                      <label for="user" class="form-label user">Usuario (solo <span>letras</span> y <span>números</span>)</label>
+                      <input type="text" name="user" id="user" class="form-control" minlength="4" maxlength="20" pattern="[a-zA-Z0-9]+">
+                  </div>
+                  <div class="col-12">
+                      <label for="pass" class="form-label">Contraseña</label>
+                      <input type="password" name="pass" id="pass" class="form-control" minlength="4" maxlength="20">
+                  </div>
+                </form>
+                <div class="login-social col-12">
+                  <button class="google col-sm-6 col-10 btn" >
+                      <i class="fa-brands fa-google" style="color: #0EEF53;"></i> 
+                      <p>Iniciar con Google</p>
+                  </button>
+                  <button class="facebook col-sm-6 col-10 btn">
+                      <i class="fa-brands fa-facebook" style="color: #0EEF53;"></i> 
+                      <p>Iniciar con Facebook</p>
+                  </button>
+                </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn"       data-bs-dismiss="modal">
+                      <i class="fa-solid fa-circle-xmark" style="color: #e90707;"></i>
+                      <span>Cancelar</span>
+                  </button>
+                  <button type="button" class="btn">
+                      <i class="fa-solid fa-user-check" style="color: #121212;"></i><span>Iniciar Sesión</span>
+                  </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </header>
     <main>
         <h1>esto es producto oferta</h1>
