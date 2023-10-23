@@ -88,32 +88,36 @@
                 <form action="#" class="form-container">
                   <div class="col-12">
                       <label for="user" class="form-label user">Usuario (solo <span>letras</span> y <span>números</span>)</label>
-                      <input type="text" name="user" id="user" class="form-control" minlength="4" maxlength="20" pattern="[a-zA-Z0-9]+">
+                      <input type="text" name="user" id="user" class="form-control" minlength="4" maxlength="20" pattern="[a-zA-Z0-9]+" required>
                   </div>
                   <div class="col-12">
                       <label for="pass" class="form-label">Contraseña</label>
-                      <input type="password" name="pass" id="pass" class="form-control" minlength="4" maxlength="20">
+                      <input type="password" name="pass" id="pass" class="form-control" minlength="4" maxlength="20" required>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn"       data-bs-dismiss="modal">
+                          <i class="fa-solid fa-circle-xmark" style="color: #e90707;"></i>
+                          <span>Cancelar</span>
+                      </button>
+                      <button type="submit" class="btn">
+                          <i class="fa-solid fa-user-check" style="color: #121212;"></i><span>Iniciar Sesión</span>
+                      </button>
+                  </div>
+                  <div class="login-btn">
+                    <a href="#" data-bs-dismiss="modal">Olvidé la contraseña</a>
+                    <a href="./registro.html">No tienes cuenta?</a>
                   </div>
                 </form>
                 <div class="login-social col-12">
-                  <button class="google col-sm-6 col-10 btn" >
+                  <button class="google col-sm-5 col-10 btn" >
                       <i class="fa-brands fa-google" style="color: #0EEF53;"></i> 
                       <p>Iniciar con Google</p>
                   </button>
-                  <button class="facebook col-sm-6 col-10 btn">
+                  <button class="facebook col-sm-5 col-10 btn">
                       <i class="fa-brands fa-facebook" style="color: #0EEF53;"></i> 
                       <p>Iniciar con Facebook</p>
                   </button>
                 </div>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn"       data-bs-dismiss="modal">
-                      <i class="fa-solid fa-circle-xmark" style="color: #e90707;"></i>
-                      <span>Cancelar</span>
-                  </button>
-                  <button type="button" class="btn">
-                      <i class="fa-solid fa-user-check" style="color: #121212;"></i><span>Iniciar Sesión</span>
-                  </button>
               </div>
             </div>
           </div>

@@ -80,11 +80,11 @@
           </section>
       </nav>
       <!-- Modal -->
-      <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLogin" aria-hidden="true">
+      <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modal-iniciar-sesion aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión</h1>
+              <h1 class="modal-title fs-5" id="modal-iniciar-sesion">Iniciar Sesión</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -106,13 +106,17 @@
                         <i class="fa-solid fa-user-check" style="color: #121212;"></i><span>Iniciar Sesión</span>
                     </button>
                 </div>
+                <div class="login-btn">
+                  <a href="#" data-bs-dismiss="modal">Olvidé la contraseña</a>
+                  <a href="./src/html/registro.html">No tienes cuenta?</a>
+                </div>
               </form>
               <div class="login-social col-12">
-                <button class="google col-6 btn" >
+                <button class="google col-sm-5 col-10 btn" >
                     <i class="fa-brands fa-google" style="color: #0EEF53;"></i> 
                     <p>Iniciar con Google</p>
                 </button>
-                <button class="facebook col-6 btn">
+                <button class="facebook col-sm-5 col-10 btn">
                     <i class="fa-brands fa-facebook" style="color: #0EEF53;"></i> 
                     <p>Iniciar con Facebook</p>
                 </button>
