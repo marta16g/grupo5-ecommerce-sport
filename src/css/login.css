@@ -18,6 +18,7 @@ font-family: 'Noto Sans', sans-serif;
 .modal-content{
     background-color: var(--night);
     color: var(--platinum);
+    border: 2px solid var(--platinum);
 }
 .modal-body form div input{
     outline: none;
@@ -60,7 +61,9 @@ font-family: 'Noto Sans', sans-serif;
     height: 100%;
     margin-bottom: 0;
 }
-
+.btn-close{
+    background-color: var(--platinum);
+}
 
 
 /* MODAL-FOOTER */
