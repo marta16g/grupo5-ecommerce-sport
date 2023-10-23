@@ -231,7 +231,6 @@ header a{
 }
 /* MENU BODY */
 .nav-mobile{
-    height: 100vh;
     position: absolute;
     width: 100vw;
     top: 0;
