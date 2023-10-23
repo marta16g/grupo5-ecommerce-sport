@@ -2,22 +2,22 @@
   background-color: var(--night);
   width: 100%;
   position: relative;
-  font-size: 12px !important;
-  height: 400px;
+  font-size: 13px !important;
 }
 .footer-logo img {
   width: 100px;
-  height: 90px;
+  height: 100px;
+  transform: scale(1.5);
 }
 .footer-group1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
 }
 .footer-group2 {
   display: flex;
   margin: 5px;
+  margin-top: 10px;
   justify-content: space-around;
 }
 .footer-group2 h3, .footer-group2 h2 {
@@ -136,6 +136,7 @@
 .copyright {
   text-align: center;
   margin-top: 10px;
+  height: 100%;
 }
 hr {
   color: var(--tiffany-blue);

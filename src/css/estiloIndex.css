@@ -37,10 +37,6 @@ main button{
     color: #0EEF53;
 }
 
-main a{
-    text-decoration: none;
-}
-
 main .div1{
     box-shadow: 0rem 0rem 1rem gray ;
 }
@@ -57,17 +53,17 @@ main .div1:hover{
 
 /* seccion de mujer etc */
 
-main .homYMuj{
+.homYMuj{
     display: flex;
     justify-content: space-evenly;
 }
 
-main .divGenero{
+.divGenero{
     overflow: hidden;
     position: relative;
 }
 
-main .cardDescr{
+.cardDescr{
     background: none;
     position: absolute;
     bottom: 0;
@@ -79,9 +75,6 @@ main .cardDescr{
 
 
 /* logo de whatsapp */
-.divWsp{
-    z-index: 10;
-}
 .divWsp a{
     border-radius: 10px;
     padding: 5px;
@@ -89,6 +82,7 @@ main .cardDescr{
     position: fixed;
     right: 10px;
     bottom: 10px;
+    z-index: 10;
 }
 .divWsp a svg{
     fill: var(--green-erin);
@@ -209,7 +203,7 @@ main .cardDescr{
 
     .cardDescr{
         justify-content: center;
-        background-color: #0eef5262;
+        background-color: #0EEF5352;
         padding: 0.3rem;
     }
 
