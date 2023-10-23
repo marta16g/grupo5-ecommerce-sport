@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.carousel-indicators{
+    background: none;
+}
+
+#carrousel{
+    display: none;
+}
+
+#carrouselResponsive{
+    display: block;
+}
+
+h3{
+
+    color: #0EEF53;
+    background-color: #121212;
+    width: 100%;
+}
+
+h4{
+    background-color: #DDDDDD;
+    margin:0;
+}
+
+h5{
+    background: none;
+}
+
+button{
+    color: #0EEF53;
+}
+
+a{
+    text-decoration: none;
+}
+
+.div1{
+    box-shadow: 0rem 0rem 1rem gray ;
+}
+
+.div1 img{
+    object-fit: contain;
+}
+
+.div1:hover{ 
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+
+/* seccion de mujer etc */
+
+.homYMuj{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.divGenero{
+    overflow: hidden;
+    position: relative;
+}
+
+.cardDescr{
+    background: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem;
+    text-align: center;
+}
+
+
+/* logo de whatsapp */
+.divWsp{
+    z-index: 10;
+}
+.divWsp a{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: var(--platinum);
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+.divWsp a svg{
+    fill: var(--green-erin);
+    height: 2.5rem;
+    width: 2.5rem;
+    transition: all .5s;
+}
+.divWsp a:hover{
+    border: 2px solid var(--green-erin);
+    background-color: var(--night);
+
+}
+.divWsp a:hover svg{
+    transform: scale(1.1) rotateY(360deg);
+}
+
+.contenedorPubl, .publicidad{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4rem;
+}
+
+@media (max-width: 529px){
+
+    .homYMuj{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .divGenero{
+        margin: 0.5rem;
+    }
+    .divGenero img{
+        width: 9rem;
+    }
+
+    .contenedorPubl img, .publicidad img{
+        width: 20rem;
+    }
+}
+
+@media (min-width: 530px) {
+
+    .divGenero{
+        margin: 0.5rem;
+    }
+
+    .divGenero img{
+        width: 10rem;
+    }
+
+    .cardDescr{
+        transform: scaleY(30px);
+    }
+
+    .cardDescr h5{
+        transition: all 0.2s ease-out  0.1s;
+        opacity: 1;
+    }
+    
+    .cardDescr a{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .contenedorPubl img, .publicidad img{
+        width: 30rem;
+    }
+
+}
+
+
+@media (min-width: 700px){
+    .divGenero img{
+        width: 13rem;
+    }
+
+    .contenedorPubl img, .publicidad img{
+        width: 40rem;
+    }
+
+}
+
+@media (min-width: 850px){
+    .divGenero img{
+        width: 15rem;
+    }
+
+    .publicidad img, .contenedorPubl img{
+        width: 50rem;
+    }
+    #carrouselResponsive{
+        display: none;
+    }
+
+    #carrousel{
+        display: block;
+    }
+}
+
+@media(max-width: 1200px){
+
+    
+    
+    /* Video */
+    video{
+        display: none;
+    }
+
+    /* publicidad */
+    /* .publicidad img{
+        width: 23rem;
+    }
+
+    .contenedorPubl img{
+        width: 23rem;
+    } */
+
+    .cardDescr{
+        justify-content: center;
+        background-color: #0eef5262;
+        padding: 0.3rem;
+    }
+
+    .homYMuj h4{
+        display: none;
+    }
+
+
+    /* Marcas */
+    .artMarcas{
+        animation: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .marcas img{
+        width: 10em;
+    }
+
+    .artMarcas:first-child{
+        display: none;
+    }
+    
+}
+@media (min-width: 1200.5px) {
+
+    #carrouselResponsive{
+        display: none;
+    }
+
+/* animacion de secciones mujer etc */
+.divGenero{
+    background: black;
+    width: 20rem;
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+}
+
+.divGenero img{
+    max-width: 100%;
+    width: 20rem;
+    transition: all 0.3s ease-out;
+}
+
+.divGenero:hover img{
+    transform: scale(1.1);
+    opacity: 0.3;
+}
+
+.cardDescr h5, .cardDescr a{
+    transform: translateY(30px);
+    transition: all 0.2s ease-out  0.1s;
+    opacity: 0;
+    color: var(--platinum);
+    cursor: default;
+}
+
+.divGenero:hover .cardDescr h5{
+    transform: translateY(0);
+    transition: all 0.2s ease-out  0.1s;
+    opacity: 1;
+}
+
+.divGenero:hover .cardDescr a{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+/* Animación de marcas */
+.artMarcas{
+    animation: movimiento 5s infinite linear;
+    display: inline-block;
+}
+
+.marcas{
+    white-space: nowrap;
+    overflow: hidden;
+}
+.marcas img{
+    filter: grayscale();
+    transition: 1s;
+}
+.marcas img:hover{
+    animation: cambioDeColor 0.7s forwards;
+}
+
+/* video */
+video{
+    width: 25rem;
+}
+
+/* publicidad */
+
+/* publicidad */
+.publicidad img{
+    width: 70rem;
+    height: 20rem;
+}
+
+@keyframes movimiento{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes cambioDeColor{
+    from{
+          filter: grayscale();
+    }
+    to{
+        filter: grayscale(0%);
+    }
+}
+}       

@@ -1,6 +1,9 @@
 .footer {
   background-color: var(--night);
   width: 100%;
+  position: relative;
+  font-size: 12px !important;
+  height: 400px;
 }
 .footer-logo img {
   width: 100px;
@@ -9,15 +12,17 @@
 .footer-group1 {
   display: flex;
   justify-content: center;
-  padding: 20px;
   align-items: center;
+  border: 1px solid red;
 }
 .footer-group2 {
   display: flex;
+  margin: 5px;
   justify-content: space-around;
 }
 .footer-group2 h3, .footer-group2 h2 {
-  color: var(--slate-gray) !important;
+  color: var(--platinum) !important;
+  cursor: default;
 }
 .footer-contact {
   flex-direction: column;
@@ -26,7 +31,7 @@
 }
 .footer-contact p i,
 .footer-contact a i {
-  font-size: 20px;
+  font-size: 12px;
   margin-right: 10px;
   color: var(--green-erin);
 }
@@ -45,18 +50,21 @@
 }
 .footer-credit {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  gap: 5px;
 }
 .footer-credit img {
   width: 40px;
   height: 35px;
-  border-radius: 10px;
-  object-fit: cover;
+  border-radius: 5px;
+  object-fit: contain;
   transition: all 0.3s;
   cursor: pointer;
+  background-color: var(--platinum);
+  padding: 5px;
 }
 .footer-credit img:first-child {
-  object-position: 100% 100%;
+  object-position: 50% 50%;
 }
 .footer-credit img:hover {
   transform: scale(1.2);
@@ -80,11 +88,13 @@
   color: var(--night);
   transition: all 0.5s;
 }
+.footer-social i{
+  transition: all .5s;
+}
 .footer-ig:hover,
 .footer-tw:hover,
 .footer-wp:hover,
 .footer-fb:hover {
-  transform: rotateY(180deg);
   background-color: var(--night);
   border: 1px solid var(--green-erin);
   color: var(--green-erin);
@@ -93,12 +103,12 @@
 .footer-tw:hover i,
 .footer-wp:hover i,
 .footer-fb:hover i {
-  transform: rotateY(-180deg);
+  transform: rotateY(-360deg);
 }
 .footer h2, .footer h3 {
   font-size: 20px;
   color: var(--slate-gray);
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   font-weight: 600;
   position: relative;
 }
@@ -122,14 +132,14 @@
 }
 .copyright p {
   color: var(--tiffany-blue);
-  padding: 5px;
 }
 .copyright {
   text-align: center;
+  margin-top: 10px;
 }
 hr {
   color: var(--tiffany-blue);
-  margin-top: 15px;
+  margin: 0;
 }
 .fa-envelope {
   color: var(--slate-gray);
