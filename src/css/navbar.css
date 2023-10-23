@@ -43,6 +43,7 @@ header a{
     border: 2px solid var(--platinum);
     padding: 5px 5px;
     font-weight: 600;
+    font-size: 14px;
 }
 .nav-desk a, .nav-desk li > a{
     transition: all .3s;
