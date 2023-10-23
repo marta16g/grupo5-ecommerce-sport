@@ -1,5 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* body{
+    background-color: aqua;
+} */
+
+.container-table{
+    background-color: blueviolet;
+    width: 80%;
+    height: 80%;
+    margin-top: 50px;
+    margin-left: 30px;
+    box-shadow: 5px 5px 10px #121212;
+    border-radius: 10px;
+    
+}
+.caption{
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.table{
+    background-color: salmon;
+   
+    
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    gap: 25px;
+    padding: 20px;
+    
+
+}
+
+.btn-pagar {
+    border-radius: 10px;
+    background-color: #121212;
+    color: #dddddd;
+    padding: 8px;
+    border: solid 1px #121212;
+}
+
+.btn-pagar:hover{
+    color: #0eef53;
+    border: solid 1px #0eef53;
+}
+.btn-pagar i{
+    
+    margin-left: 10px;
+
+}
+
+.btn-carrito {
+    border-radius: 10px;
+    background-color: #121212;
+    color: #dddddd;
+    padding: 8px;
+    border: solid 1px #121212;
+}
+.btn-carrito:hover{
+    color: #0eef53;
+    border: solid 1px #0eef53;
+}
+.btn-carrito i{
+    
+    margin-left: 10px;
+
+}
+
+.btn-eliminar {
+    cursor: pointer;   
+    border: solid 1px #121212;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.p-total{
+    font-weight: bold;
+    
+}
+
+
+tfoot{
+    align-items: center;
+    background-color: crimson;
+}
+
+@media screen and (max-width: 768px){
+    .table-caption{
+        font-size:15px ;
+        
+    }
+    .thead{
+        display: none;
+    }
+    .container-table .table{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 469px){
+    .table-caption{
+        font-size:15px ;
+        
+    }
+    .thead{
+        display: none;
+    }
+    .btn-eliminar{
+        display: none;
+    }
+    .table tr{
+        display: block;
+        margin-bottom: 8px;
+        border-bottom: 2px solid black;
+    }
+    .table td{
+        display: block;
+        text-align: right;
+    }
+    .table td::before{
+        content: attr(data-titulo);
+        float: left;
+        font-weight: bold;
+    }
+
 }
