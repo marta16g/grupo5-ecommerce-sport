@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+:root{
+    --night: #121212;
+    --green-erin: #0EEF53;
+    --platinum: #DDDDDD;
+    --light-blue: #B9EDDD;
+    --tiffany-blue: #87CBB9;
+    --slate-gray: #577D86;
+}
 * {
     margin: 0;
     padding: 0;
@@ -6,125 +14,139 @@
     font-family: 'Noto Sans', sans-serif;
 }
 body {
-    background-color:#dddddd;
+    background-color: var(--platinum);
 }
 .container {
     display: flex;
-    background-color: #121212;
-    height: 600;
-    width: 1000px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-radius: 25px;
+    background-color: var(--platinum);
+    max-width: 900px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin: 50px auto;
+    border-radius: 10px;
 }
-.form {
-    padding: 30px 80px;
+.contacto-form {
+    padding: 20px;
     width: 50%;
     display: flex;
     flex-direction: column;
     position: relative;
 }
-.form::before {
+.contacto-form::before {
     content: "";
     position: absolute;
     height: 70%;
     width: 2px;
-    right: 15px;
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #0eff53;
+    background-color: var(--green-erin);
 }
-.form h2 {
+.contacto-form h2 {
     font-size: 45px;
-    color: #0eff53;
+    color: var(--night);
     font-weight: 600;
     margin-bottom: 25px;
 }
-label {
+.contacto-form label {
     font-size: 15px;
-    color: #577d86;
-    margin-bottom: 15px;
+    color: var(--slate-gray);
+    margin-bottom: 5px;
 }
-.box {
+.contacto-form .box, .contacto-form textarea{
+    border-radius: 5px;
+    background-color: #fff;
+    resize: none;
     border: 0;
-    background-color: #70f586;
     padding: 10px;
-    border-radius: 25px;
     margin-bottom: 25px;
     outline: none;
 }
-.submit {
-    background-color: #121212;
-    color: #0eff53;
+
+.contacto-form .submit {
+    background-color: var(--night);
+    color: var(--platinum);
     padding: 10px;
     font-size: 16px;
-    border-radius: 25px;
-    width: 250px;
-    margin-top: 25px;
-    margin-left: 40px;
-    border: 4px #0eff53 inset;
+    border-radius: 10px;
+    width: 150px;
+    cursor: pointer;
+    outline: none;
+    border: none;
 }
-.location {
+.container .location {
     display: flex;
     position: relative;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    width: 50%;
 }
-.icons {
+.container .location .icons {
     display: flex;
-    margin-top: 20px;
-    padding: 20px 40px;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+    align-items: center;
 }
-.icons p {
+.container .location .icons p {
     font-size: 15px;
     color: #577d86;
-    margin-left: 15px;
-    margin-top: -2px;
 }
-.fa-location-dot {
+.container .location .icons i{
     color: #0eff53;
     font-size: 23px;
+    width: 25px;
+    margin-right: 10px;
 }
-.fa-phone {
-    color: #0eff53;
-    font-size: 23px;
+.maps{
+    width: 100%;
+    height: 50%;
 }
-.fa-envelope {
-    color: #0eff53;
-    font-size: 23px;
-}
-.maps {
-    position: absolute;
-    margin-top: 260px;
-    margin-left: 43px;
+.maps iframe{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 @media screen and (max-width:990px) {
 
       .container {
-        width: 80%;
-        height: 100%;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+        width: 90%;
       }
 
       .maps {
         display: none;
       }
 
-      .form::before {
+      .contacto-form::before {
         display: none;
       }
 
-      .form {
-        width: 100%;
+      .contacto-form {
+        width: 80%;
         padding: 30px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
       }
-
-      .submit {
-        margin-left: 1px;
+      .contacto-form input[type=text], .contacto-form input[type=email], .contacto-form textarea{
+        width: 100%;
       }
+      .container .location{
+        width: 80%;
+        padding: 30px;
+      }
+}
+@media screen and (max-width: 576px){
+    .container{
+        width: 95%;
     }
+    .container .location, .contacto-form{
+        padding: 10px;
+        width: 100%;
+    }
+}
