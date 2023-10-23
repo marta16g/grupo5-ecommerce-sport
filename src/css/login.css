@@ -19,6 +19,7 @@ font-family: 'Noto Sans', sans-serif;
     background-color: var(--night);
     color: var(--platinum);
     border: 2px solid var(--platinum);
+    z-index: 25;
 }
 .modal-body{
     width: 80%;
