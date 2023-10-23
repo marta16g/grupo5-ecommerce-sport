@@ -17,39 +17,39 @@
     display: block;
 }
 
-h3{
+main h3{
 
     color: #0EEF53;
     background-color: #121212;
     width: 100%;
 }
 
-h4{
+main h4{
     background-color: #DDDDDD;
     margin:0;
 }
 
-h5{
+main h5{
     background: none;
 }
 
-button{
+main button{
     color: #0EEF53;
 }
 
-a{
+main a{
     text-decoration: none;
 }
 
-.div1{
+main .div1{
     box-shadow: 0rem 0rem 1rem gray ;
 }
 
-.div1 img{
+main .div1 img{
     object-fit: contain;
 }
 
-.div1:hover{ 
+main .div1:hover{ 
     transform: scale(1.05);
     transition: 0.7s;
 }
@@ -57,17 +57,17 @@ a{
 
 /* seccion de mujer etc */
 
-.homYMuj{
+main .homYMuj{
     display: flex;
     justify-content: space-evenly;
 }
 
-.divGenero{
+main .divGenero{
     overflow: hidden;
     position: relative;
 }
 
-.cardDescr{
+main .cardDescr{
     background: none;
     position: absolute;
     bottom: 0;
