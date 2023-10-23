@@ -56,34 +56,37 @@ color: var(--night);
 .card0 {
   background: url("../img/img-nosotros/3.jpg") center center no-repeat;
   background-size: 400px;
-filter: grayscale(1);
+  filter: grayscale(1);
 }
 .card0:hover {
   background: url("../img/img-nosotros/3.jpg") left center no-repeat;
   background-size: 600px;
-filter: grayscale(0.3);
+  background-position: 50% 30%;
+  filter: grayscale(0.3);
 }
 
 .card1 {
   background: url("../img/img-nosotros/5.jpg") center center no-repeat;
   background-size: 400px;
-filter: grayscale(1);
+  filter: grayscale(1);
 }
 .card1:hover {
   background: url("../img/img-nosotros/5.jpg") left center no-repeat;
   background-size: 600px;
-filter: grayscale(0.3);
+  background-position: 50% 30%;
+  filter: grayscale(0.3);
 }
 
 .card2 {
   background: url("../img/img-nosotros/2.jpg") center center no-repeat;
   background-size: 400px;
-filter: grayscale(1);
+  filter: grayscale(1);
 }
 .card2:hover {
   background: url("../img/img-nosotros/2.jpg") left center no-repeat;
   background-size: 600px;
-filter: grayscale(0.3);
+  background-position: 50% 30%;
+  filter: grayscale(0.3);
 }
 
 .card3{
@@ -94,7 +97,8 @@ filter: grayscale(1);
 .card3:hover {
   background: url("../img/img-nosotros/1.jpg") left center no-repeat;
   background-size: 600px;
-filter: grayscale(0.3);
+  background-position: 50% 30%;
+  filter: grayscale(0.3);
 }
 
 .card4{
@@ -105,6 +109,7 @@ filter: grayscale(0.3);
 .card4:hover {
   background: url("../img/img-nosotros/4.jpg") left center no-repeat;
   background-size: 600px;
+  background-position: 50% 30%;
 	filter: grayscale(0.3);
 }
 
@@ -118,22 +123,20 @@ filter: grayscale(0.3);
 .card3:hover .fa, 
 .card4:hover h2, 
 .card4:hover .fa,
-.card0:hover .icons-data,
-.card1:hover .icons-data,
-.card2:hover .icons-data,
-.card3:hover .icons-data,
-.card4:hover .icons-data{
+.card0:hover .icons,
+.card1:hover .icons,
+.card2:hover .icons,
+.card3:hover .icons,
+.card4:hover .icons{
   opacity: 1;
 }
-
-
 .card h2 {
   color: #fff;
   margin: 20px;
   opacity: 0;
   transition: opacity 1s;
 }
-.fa, .icons-data{
+.fa, .icons{
   opacity: 0;
   transition: opacity 1s;
 	text-decoration:none;
@@ -144,16 +147,21 @@ font-weight: 500;
 }
 .icons {
   position: absolute;
-  fill: #fff;
-list-style: none;
+  fill: var(--platinum);
+  list-style: none;
   color: #fff;
-  bottom: 20px;
-height: 50px;
+  bottom: 10px;
+  height: 80px;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
-gap:10px;
+  gap:10px;
+  background-color: rgba(0,0,0,.5);
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 @media screen and (max-width: 569px){
@@ -191,20 +199,31 @@ gap:10px;
   }
 }
 @media screen and (min-width: 900px){
-  .container{
-    width: 1100px;
-  }
   .card-container{
     width: 100%;
-    justify-content: space-around;
   }
   .border{
-    width: 260px;
-    height: 325px;
+    width: 180px;
+    height: 260px;
   }
   .card{
-    min-width: 270px;
-    max-width: 270px;
-    height: 339px;
+    min-width: 190px;
+    max-width: 190px;
+    height: 270px;
+  }
+  .card h2{
+    margin: 5px;
+  }
+  .card ul{
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .card ul li{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  .card ul li i{
+    font-size: 20px;
   }
 }

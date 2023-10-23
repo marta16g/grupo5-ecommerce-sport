@@ -132,10 +132,10 @@
     <h1 class="text-center mb-3 mt-3">Registro</h1>
     <main class="container container-fluid d-flex justify-content-center">
       <form
-        class="form-container col-lg-6 p-2 fw-semibold d-flex flex-column gap-1"
+        class="form-container col-12 col-lg-6 p-2 fw-semibold d-flex flex-column gap-4"
       >
-        <section class="reg-info">
-          <div class="col-12 col-md-5">
+        <section class="reg-info justify-content-between">
+          <div class="col-12 col-sm-5">
             <label for="nombre" class="form-label">Nombre</label>
             <input
               type="text"
@@ -147,7 +147,7 @@
               required
             />
           </div>
-          <div class="col-12 col-md-5">
+          <div class="col-12 col-sm-5">
             <label for="apellido" class="form-label">Apellido</label>
             <input
               type="text"
@@ -160,7 +160,7 @@
             />
           </div>
         </section>
-        <section class="col-12 col-md-12">
+        <section class="col-12">
           <label for="email" class="form-label">Email</label>
           <input
             type="email"
@@ -172,8 +172,8 @@
             required
           />
         </section>
-        <section class="col-12 passwords d-flex flex-column">
-          <div class="col-12 col-lg-5">
+        <section class="col-12 passwords d-flex align-items-start flex-column justify-content-between flex-sm-row">
+          <div class="col-12 col-sm-5">
             <label for="password" class="form-label">Password</label>
             <input
               type="password"
@@ -182,24 +182,24 @@
               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
               required
             />
-            <p class="pass mt-2 fw-light p-2">
-              el password debe contener al menos <strong>un número</strong>,
-              <strong>una minúscula</strong>, <strong>una mayúscula</strong> y
-              debe ser de, al menos, <strong>8(ocho) caracteres</strong>.
-            </p>
           </div>
-          <div class="col-12 col-lg-5">
-            <label for="password" class="form-label">Repetir Password</label>
+          <div class="col-12 col-sm-5">
+            <label for="re-password" class="form-label">Repetir Password</label>
             <input
               type="password"
               class="form-control"
-              id="password"
+              id="re-password"
               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
               required
             />
           </div>
         </section>
-        <section class="col-12 col-md-12">
+        <p class="pass fw-light p-2 col-12">
+          el password debe contener al menos <strong>un número</strong>,
+          <strong>una minúscula</strong>, <strong>una mayúscula</strong> y
+          debe ser de, al menos, <strong>8(ocho) caracteres</strong>.
+        </p>
+        <section class="col-12">
           <label for="direccion" class="form-label">Dirección</label>
           <input
             type="text"
@@ -212,8 +212,8 @@
             required
           />
         </section>
-        <section class="address">
-          <div class="col-12 col-md-4">
+        <section class="address d-flex flex-column gap-2">
+          <div class="col-12 col-sm-4">
             <label for="localidad" class="form-label">Localidad</label>
             <input
               type="text"
@@ -226,7 +226,7 @@
               required
             />
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-sm-4">
             <label for="provincia" class="form-label">Provincia</label>
             <select id="provincia" class="form-select" required>
               <option>Selecciona tu provincia...</option>
@@ -255,7 +255,7 @@
               <option>Tierra del Fuego</option>
             </select>
           </div>
-          <div class="col-5 col-md-3">
+          <div class="col-12 col-sm-3">
             <label for="codpostal" class="form-label">Código Postal</label>
             <input type="number" class="form-control" id="codpostal" required maxlength="5"/>
           </div>
@@ -280,7 +280,7 @@
           </div>
         </section>
       </form>
-      <article class="col-md-6 img-container p2">
+      <article class="col-md-6 img-container">
         <figure class="img1">
           <img src="../img/img-reg/1.jpg" alt="" width="300" />
         </figure>
@@ -295,6 +295,12 @@
         </figure>
         <figure class="img5">
           <img src="../img/img-reg/5.jpg" alt="" width="300" />
+        </figure>
+        <figure class="img6">
+          <img src="../img/img-reg/6.jpg" alt="" width="300" />
+        </figure>
+        <figure class="img7">
+          <img src="../img/img-reg/7.jpg" alt="" width="300" />
         </figure>
       </article>
     </main>
@@ -316,18 +322,20 @@
           </article>
           <article class="footer-information">
               <h2>INFORMACIÓN</h2>
-              <a href="#">Medios de pago</a>
-              <a href="#">Terminos y condiciones</a>
-              <a href="#">Cambio y/o devolución</a>
-              <a href="#">Envíos a domicilio</a>
-              <a href="#">Retiro en sucursal</a>
+              <a href="./error404.html">Medios de pago</a>
+              <a href="./error404.html">Terminos y condiciones</a>
+              <a href="./error404.html">Cambio y/o devolución</a>
+              <a href="./error404.html">Envíos a domicilio</a>
+              <a href="./error404.html">Retiro en sucursal</a>
           </article>
           <article class="footer-card">
               <h2>TARJETAS DE CREDITO</h2>
               <div class="footer-credit">
-                  <img src="../img/img-footer/naranja.jpeg" alt="tarjeta">
-                  <img src="../img/img-footer/mastercad.jpeg" alt="tarjeta">
-                  <img src="../img/img-footer/visa.jpeg" alt="tarjeta">
+                  <img src="../img/img-footer/naranja-x-1.svg" alt="tarjeta">
+                  <img src="../img/img-footer/tarjeta-naranja.svg" alt="tarjeta">
+                  <img src="../img/img-footer/mastercard.svg" alt="tarjeta">
+                  <img src="../img/img-footer/visa.svg" alt="tarjeta">
+                  <img src="../img/img-footer/maestro.svg" alt="tarjeta">
               </div>
               <h2>NUESTRAS REDES</h2>
               <div class="footer-social">
