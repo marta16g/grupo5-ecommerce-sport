@@ -82,7 +82,7 @@ main .div1:hover{
     position: fixed;
     right: 10px;
     bottom: 10px;
-    z-index: 10;
+    z-index: 6;
 }
 .divWsp a svg{
     fill: var(--green-erin);
@@ -183,15 +183,16 @@ main .div1:hover{
         position: relative;
     }
 }
-
+@media screen and (max-width: 992px){
+    /* Video */
+}
 @media(max-width: 1200px){
 
     
-    
-    /* Video */
-    video{
+    .contenedorPubl{
         display: none;
     }
+    
 
     /* publicidad */
     /* .publicidad img{
