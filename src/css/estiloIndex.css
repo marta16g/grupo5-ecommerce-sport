@@ -15,6 +15,7 @@
 
 #carrouselResponsive{
     display: block;
+    position: relative;
 }
 
 main h3{
