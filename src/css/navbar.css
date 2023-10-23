@@ -9,12 +9,6 @@
 --slate-gray: #577D86;
 font-family: 'Noto Sans', sans-serif;
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    }
 
 header{
     height: 110px;
@@ -240,22 +234,21 @@ header a{
     position: absolute;
     width: 100vw;
     top: 0;
-    bottom: 0;
     right: 0;
     font-size: 16px;
     overflow: hidden;
 }
 .nav-mobile aside{
-    position: absolute;
+    position: fixed;
     top: 0;
     right:0;
     bottom:0;
-    height: 100%;
+    height: 100vh;
     background-color: var(--green-erin);
     width: 80vw;
     transform: translateX(100%);
     transition: all .3s;
-    z-index: 10;
+    z-index: 11;
     overflow: hidden;
 }
 /* LOGO */
