@@ -177,11 +177,11 @@ header a{
 
 /* BURGUER MENU */
 .nav-mobile > label{
-    top: 0;
+    top: 10px;
+    left: 10px;
     background-color: var(--night);
     border-radius: 50%;
     cursor: pointer;
-    margin: 10px;
     width: 50px;
     height: 50px;
     display: flex;
@@ -213,17 +213,17 @@ header a{
 .nav-mobile input[type="checkbox"]:checked ~ .nav-mobile aside .aside-right {
     transform: translateX(0%);
 }
-.nav-mobile input[type="checkbox"]:checked ~ #label-mobile .top {
-    transform: translateY(0px) rotateZ(45deg);
-}
-.nav-mobile input[type="checkbox"]:checked ~ #label-mobile{
+.nav-mobile input[type="checkbox"]:checked ~ label{
     display: block;
     padding-top: 18px;
 }
-.nav-mobile input[type="checkbox"]:checked ~ #label-mobile .bottom {
+.nav-mobile input[type="checkbox"]:checked ~ label .top {
+    transform: translateY(0px) rotateZ(45deg);
+}
+.nav-mobile input[type="checkbox"]:checked ~ label .bottom {
     transform: translateY(-15px) rotateZ(-45deg);
 }
-.nav-mobile input[type="checkbox"]:checked ~ #label-mobile .middle {
+.nav-mobile input[type="checkbox"]:checked ~ label .middle {
     width: 0;
 }
 .middle {

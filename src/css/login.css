@@ -20,6 +20,10 @@ font-family: 'Noto Sans', sans-serif;
     color: var(--platinum);
     border: 2px solid var(--platinum);
 }
+.modal-body{
+    width: 80%;
+    margin: auto;
+}
 .modal-body form div input{
     outline: none;
     background-color: var(--platinum);
@@ -38,8 +42,8 @@ font-family: 'Noto Sans', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
     margin-top: 20px;
+    width: 100%;
 }
 .google, .facebook{
     background-color: var(--night);
@@ -49,9 +53,10 @@ font-family: 'Noto Sans', sans-serif;
     align-items: center;
     color: var(--green-erin);
     transition: all .3s;
+    width: 49%;
 }
 .google i, .facebook i{
-    font-size: 40px;
+    font-size: 35px;
     transition: all .5s;
 }
 .google:hover i, .facebook:hover i{
@@ -71,10 +76,11 @@ font-family: 'Noto Sans', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px 0;
 }
 .modal-footer button{
     font-weight: 500;
-    min-width: 150px;
+    width: 40%;
     height: 50px;
     display: flex;
     align-items: center;
@@ -120,10 +126,31 @@ font-family: 'Noto Sans', sans-serif;
 .modal-footer button:nth-child(2):hover{
     filter: brightness(130%);
 }
+.login-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-btn a{
+    background-color: transparent;
+    text-decoration: none;
+    border-right: 2px solid var(--green-erin);
+    padding-right: 5px;
+    color: var(--platinum);
+    text-align: start;
+}
 
 @media screen and (max-width: 576px){
     .login-social{
         flex-direction: column;
+        gap: 10px;
+    }
+    .login-btn a{
+        font-size: 10px;
+        width: 49%;
+    }
+    .google, .facebook{
+        width: 100%;
     }
     .modal-footer{
         justify-content: space-between;

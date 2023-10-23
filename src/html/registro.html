@@ -132,7 +132,7 @@
     <h1 class="text-center mb-3 mt-3">Registro</h1>
     <main class="container container-fluid d-flex justify-content-center">
       <form
-        class="form-container col-12 col-lg-6 p-2 fw-semibold d-flex flex-column gap-4"
+        class="form-container col-12 col-lg-6 p-2 fw-semibold d-flex flex-column gap-4" action="#" method="post"
       >
         <section class="reg-info justify-content-between">
           <div class="col-12 col-sm-5">
@@ -144,7 +144,9 @@
               pattern="[a-z ,.'-]+$/i"
               maxlength="10"
               minlength="4"
+              title="Super necesario"
               required
+              aria-required="Completa el campo"
             />
           </div>
           <div class="col-12 col-sm-5">
@@ -156,7 +158,9 @@
               pattern="[a-z ,.'-]+$/i"
               maxlength="10"
               minlength="4"
+              title="Necesario tambien"
               required
+              aria-required="Completa el campo"
             />
           </div>
         </section>
@@ -169,7 +173,9 @@
             pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
             maxlength="50"
             minlength="6"
+            title="para poder enviarte tu factura"
             required
+            aria-required="Completa el campo"
           />
         </section>
         <section class="col-12 passwords d-flex align-items-start flex-column justify-content-between flex-sm-row">
@@ -180,6 +186,7 @@
               class="form-control"
               id="password"
               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Por Favor, NO uses 1234, tu cumpleaños o cosas clásicas"
               required
             />
           </div>
@@ -190,6 +197,7 @@
               class="form-control"
               id="re-password"
               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Escribe nuevamente tu contraseña."
               required
             />
           </div>
@@ -223,6 +231,7 @@
               pattern="[a-zA-Z0-9-]+"
               maxlength="20"
               minlength="4"
+              title="Tu localidad"
               required
             />
           </div>
@@ -257,7 +266,7 @@
           </div>
           <div class="col-12 col-sm-3">
             <label for="codpostal" class="form-label">Código Postal</label>
-            <input type="number" class="form-control" id="codpostal" required maxlength="5"/>
+            <input type="number" class="form-control" id="codpostal" required maxlength="5" title="Formato númerico de 4 caracteres"/>
           </div>
         </section>
         <section
@@ -268,17 +277,17 @@
               class="form-check-input"
               type="checkbox"
               id="humano"
-              checked
+              title="Sos vos?..."
               required
             />
             <label class="form-check-label" for="humano"> Soy humano </label>
           </div>
-          <div class="col-md-12 d-flex justify-content-center mt-3">
-            <button type="submit" class="btn reg-confirm col-md-6">
-              Registrarse
-            </button>
-          </div>
         </section>
+        <div class="col-md-12 d-flex justify-content-center mt-3">
+          <button type="submit" class="btn reg-confirm col-md-6">
+            Registrarse
+          </button>
+        </div>
       </form>
       <article class="col-md-6 img-container">
         <figure class="img1">
