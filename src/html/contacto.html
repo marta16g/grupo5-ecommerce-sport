@@ -1,190 +1,66 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilo.css">
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/login.css">
-    <title>Energy Sport - Contacto</title>
+    <link rel="stylesheet" href="../css/stylecontacto.css">
+    <title>Contacto</title>
 </head>
 <body>
-    <header>
-        <section class="nav-mobile">
-            <input type="checkbox" id="menu-burguer">
-            <label for="menu-burguer">
-                <span class="bar top"></span>
-                <span class="bar middle"></span>
-                <span class="bar bottom"></span>
-            </label>
-            <aside class="aside-section aside-right">
-                <ul class="aside-list">
-                    <figure class="nav-logo"></figure>
-                    <section class="aside-search">
-                        <input type="text" placeholder="" class="nav-input"/>
-                        <a class="link-cart" href="./carrito.html">
-                            <img
-                            class="cart"
-                            src="../img/img-carrito/icons8-bolsa-de-compras-50 .png"
-                            alt="carrito de compras"
-                            width="35px"
-                            height="35px"
-                            />
-                        </a>
-                    </section>
-                    <li><a href="../../index.html" class="aside-anchor">Inicio</a></li>
-                    <li><a href="./productos.html" class="aside-anchor">Productos</a></li>
-                    <li><a href="./nosotros.html" class="aside-anchor">Nosotros</a></li>
-                    <li><a href="./contacto.html" class="aside-anchor">Contacto</a></li>
-                    <hr>
-                    <section class="aside-session">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Iniciar Sesión</a>
-                        <a href="./registro.html" class="">Registrarse</a>
-                    </section>
-                </ul>
-            </aside>
-        </section>
-        <nav class="nav-desk">
-            <figure class="nav-logo">
-            </figure>
-            <ul class="nav-links">
-                <li>
-                    <a href="../../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="./productos.html">Productos</a>
-                </li>
-            </ul>
-            <section class="search">
-                <input type="text" placeholder="" />
-            </section>
-            <section class="session">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">
-                  Iniciar Sesión
-                </a>
-                <a href="./registro.html">Registrarse</a>
-                <a class="link-cart" href="./carrito.html">
-                    <img class="cart" src="../img/img-carrito/icons8-bolsa-de-compras-50 .png" alt="carrito de compras" width="20px" height="20px"
-                />
-                </a>
-            </section>
-        </nav>
-        <!-- Modal -->
-        <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modal-iniciar-sesion aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="modal-iniciar-sesion">Iniciar Sesión</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <form action="#" class="form-container">
-                  <div class="col-12">
-                      <label for="user" class="form-label user">Usuario (solo <span>letras</span> y <span>números</span>)</label>
-                      <input type="text" name="user" id="user" class="form-control" minlength="4" maxlength="20" pattern="[a-zA-Z0-9]+" required>
-                  </div>
-                  <div class="col-12">
-                      <label for="pass" class="form-label">Contraseña</label>
-                      <input type="password" name="pass" id="pass" class="form-control" minlength="4" maxlength="20" required>
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn"       data-bs-dismiss="modal">
-                          <i class="fa-solid fa-circle-xmark" style="color: #e90707;"></i>
-                          <span>Cancelar</span>
-                      </button>
-                      <button type="submit" class="btn">
-                          <i class="fa-solid fa-user-check" style="color: #121212;"></i><span>Iniciar Sesión</span>
-                      </button>
-                  </div>
-                  <div class="login-btn">
-                    <a href="#" data-bs-dismiss="modal">Olvidé la contraseña</a>
-                    <a href="./registro.html">No tienes cuenta?</a>
-                  </div>
-                </form>
-                <div class="login-social col-12">
-                  <button class="google col-sm-5 col-10 btn" >
-                      <i class="fa-brands fa-google" style="color: #0EEF53;"></i> 
-                      <p>Iniciar con Google</p>
-                  </button>
-                  <button class="facebook col-sm-5 col-10 btn">
-                      <i class="fa-brands fa-facebook" style="color: #0EEF53;"></i> 
-                      <p>Iniciar con Facebook</p>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-    <main> 
-        <h1>Contacto</h1>
-       <section>  
-          <!-- mostrar número, dirección y correo -->
-       </section>
-       <section>
-          <!-- formulario con nombre, asunto, correo y caja de texto -->
-       </section>
+    <div class="container">
 
-       <!-- una columna  -->
-       <div>
-          <!-- mapa con ubicación (rolling code) -->
-       </div>
-    </main>
-    <footer class="footer">
-        <section class="footer-group1">
-            <figure class="footer-logo">
-                <img src="../img/img-footer/logoenergy.png" alt="logo">
-            </figure>
-        </section>
-        <hr>
-        <section class="footer-group2">
-            <article class="footer-contact">
-                <h2>CONTACTO</h2>
-                <p>Horarios de atención</p>
-                <p>Lunes a sábados</p>
-                <p>9hs a 13hs - 17hs a 21hs</p>
-                <a href='mailto:energysport@gmail.com'><i class="fa-regular fa-envelope"></i>energysport@gmail.com</a>
-                <p><i class="fa-solid fa-phone"></i>3814432371</p>
-            </article>
-            <article class="footer-information">
-                <h2>INFORMACIÓN</h2>
-                <a href="./error404.html">Medios de pago</a>
-                <a href="./error404.html">Terminos y condiciones</a>
-                <a href="./error404.html">Cambio y/o devolución</a>
-                <a href="./error404.html">Envíos a domicilio</a>
-                <a href="./error404.html">Retiro en sucursal</a>
-            </article>
-            <article class="footer-card">
-                <h2>TARJETAS DE CREDITO</h2>
-                <div class="footer-credit">
-                    <img src="../img/img-footer/naranja-x-1.svg" alt="tarjeta">
-                    <img src="../img/img-footer/tarjeta-naranja.svg" alt="tarjeta">
-                    <img src="../img/img-footer/mastercard.svg" alt="tarjeta">
-                    <img src="../img/img-footer/visa.svg" alt="tarjeta">
-                    <img src="../img/img-footer/maestro.svg" alt="tarjeta">
-                </div>
-                <h2>NUESTRAS REDES</h2>
-                <div class="footer-social">
-                    <span class="footer-ig"><i class="fa-brands fa-instagram"></i></span>
-                    <span class="footer-tw"><i class="fa-brands fa-x-twitter"></i></span>
-                    <span class="footer-wp"><i class="fa-brands fa-whatsapp"></i></span>
-                    <span class="footer-fb"><i class="fa-brands fa-facebook"></i></span>
-                </div>
-            </article>
-        </section>
-        <hr>
-        <section class="copyright">
-            <p> Energysport &copy;| Todos los derechos reservados</p>
-        </section>
-    </footer>
+        <form class="contacto-form ">
+
+            <h2>Contactanos</h2>
+
+            <label for="name">Escribe tu nombre</label>
+            <input type="text" name="name" id="name" class="box" maxlength="10" required>
+
+            <label for="email">Escribe tu email</label>
+            <input type="email" name="email" id="email" class="box" maxlength="30" required>
+
+            <label for="message">Escribe tu mensaje</label>
+            <textarea class="box" name="message" id="message" cols="30" rows="10" maxlength="200" required></textarea>
+
+            <input type="submit" value="Enviar" class="submit">
+
+
+        </form>
+
+        <div class="location">
+
+            <div class="icons">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>General paz 576 - San Miguel de Tucumán</p>
+            </div>
+
+            <div class="icons">
+                <i class="fa-solid fa-envelope"></i>
+                <p>rollingcodeschool@gmail.com</p>
+            </div>
+
+            <div class="icons">
+                <i class="fa-solid fa-phone"></i>
+                <p>3814585371</p>
+            </div>
+
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.118032695627!2d-65.20965262528034!3d-26.83619789000974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c0e8d0271b7%3A0x7946062ac490db30!2sGral.%20Paz%20576%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1697843433953!5m2!1ses!2sar" 
+                style="border:0;" allowfullscreen="" 
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+    
+
+
+
     <script src="https://kit.fontawesome.com/bcd50d3596.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
