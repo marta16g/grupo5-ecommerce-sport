@@ -145,12 +145,11 @@
               type="text"
               class="form-control"
               id="nombre"
-              pattern="[a-z ,.'-]+$/i"
+              pattern="[a-zA-Z,.'-]+$/i"
               maxlength="10"
-              minlength="4"
+              minlength="2"
               title="Super necesario"
               required
-              aria-required="Completa el campo"
             />
           </div>
           <div class="col-12 col-sm-5">
@@ -159,12 +158,11 @@
               type="text"
               class="form-control"
               id="apellido"
-              pattern="[a-z ,.'-]+$/i"
+              pattern="[a-zA-Z,.'-]+$/i"
               maxlength="10"
               minlength="4"
               title="Necesario tambien"
               required
-              aria-required="Completa el campo"
             />
           </div>
         </section>
@@ -189,8 +187,10 @@
               type="password"
               class="form-control"
               id="password"
-              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,10}"
               title="Por Favor, NO uses 1234, tu cumpleaños o cosas clásicas"
+              minlength="8"
+              maxlength="10"
               required
             />
           </div>
@@ -200,8 +200,10 @@
               type="password"
               class="form-control"
               id="re-password"
-              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,10}"
               title="Escribe nuevamente tu contraseña."
+              minlength="8"
+              maxlength="10"
               required
             />
           </div>
@@ -209,7 +211,7 @@
         <p class="pass fw-light p-2 col-12">
           el password debe contener al menos <strong>un número</strong>,
           <strong>una minúscula</strong>, <strong>una mayúscula</strong> y
-          debe ser de, al menos, <strong>8(ocho) caracteres</strong>.
+          debe ser de, al menos, <strong>8 (ocho) caracteres</strong>.
         </p>
         <section class="col-12">
           <label for="direccion" class="form-label">Dirección</label>

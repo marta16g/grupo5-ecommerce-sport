@@ -113,6 +113,7 @@ form label{
     position: relative;
     cursor: pointer;
     width: 150px;
+    border-radius: 0;
 }
 .reg-confirm:active, .reg-confirm:visited, .reg-confirm:hover{
     background-color: var(--green-erin);
