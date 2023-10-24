@@ -1,0 +1,71 @@
+@import url('[https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap]');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --night: #121212;
+    --green-erin: #0EEF53;
+    --platinum: #DDDDDD;
+    --light-blue: #B9EDDD;
+    --tiffany-blue: #87CBB9;
+    --slate-gray: #577D86;
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--night);
+}
+
+body{
+    background-color: var(--platinum);
+}
+
+.productos-card{
+    width: 15rem !important;
+    background-color: var(--platinum);
+    transition: all .3s;
+}
+.productos-card:hover{
+    border: 0 2px 2px 0 solid var(--slate-gray);
+    box-shadow: 2px 2px 3px var(--night);
+    
+}
+.productos-card :is(p, h5){
+    cursor: default;
+}
+.productos-card .productos-btn{
+    width: 150px;
+    background-color: transparent;
+    border: 2px solid var(--night);
+    transition: all .3s;
+    cursor: pointer;
+    color: var(--night);
+    font-weight: 500;
+}
+.productos-card .productos-btn:hover{
+    background-color: var(--green-erin);
+    color: var(--night);
+}
+.nav-pagination ul li .active{
+    background-color: var(--green-erin);
+    border: none;
+    color: var(--night);
+    font-weight: 400;
+}
+.nav-pagination ul li a:hover{
+    background-color: var(--night);
+    color: var(--green-erin);
+    font-weight: 500;
+}
+.nav-pagination ul li a{
+    color: var(--night);
+}
+.nav-pagination .next{
+    background-color: var(--green-erin);
+    font-weight: 400;
+    border: none;
+}
+.nav-pagination disabled{
+    background-color: var(--slate-gray);
+    color: var(--night);
+}
