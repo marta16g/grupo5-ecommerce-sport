@@ -114,13 +114,13 @@
   font-weight: 600;
   position: relative;
 }
-.footer-card h2::before, .footer-card h3::before {
+.footer-card h2::before, .footer-card h3::before, .footer-contact h2::before, .footer-information h2::before {
   content: "";
   position: absolute;
   bottom: -3px;
   background-color: var(--tiffany-blue);
   height: 2px;
-  width: 100px;
+  width: 50%;
 }
 .footer-information a {
   color: var(--tiffany-blue);
