@@ -26,7 +26,7 @@
     width: 40px;
 }
 
-.botones{
+.container-table .botones{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -35,24 +35,24 @@
     padding: 20px;
 }
 
-.botones button {
+.container-table .botones button {
     border-radius: 10px;
     background-color: #121212;
     padding: 8px;
     border: solid 1px #121212;
 }
-.botones a{
+.container-table .botones a{
     text-decoration: none;
     color:#dddddd;
 }
 
-.botones button:hover{
+.container-table .botones button:hover{
     border: solid 1px #0eef53;
 }
-.botones button:hover a{
+.container-table .botones button:hover a{
     color: #0eef53;
 }
-.botones button:hover i{
+.container-table .botones button:hover i{
     transform: rotateY(360deg);
 }
 .btn-pagar i, .btn-carrito i{
@@ -95,14 +95,14 @@ tfoot th, .p-total{
     .thead{
         display: none;
     }
-    .botones{
+    .container-table .botones{
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
         width: 100%;
     }
-    .botones button{
+    .container-table .botones button{
         width: 49%;
         height: 60px;
     }
