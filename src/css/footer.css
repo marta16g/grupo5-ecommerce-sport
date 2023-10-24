@@ -38,6 +38,7 @@
 }
 .footer-contact a {
   text-decoration: none;
+  transition: all .3s;
   color: var(--tiffany-blue);
 }
 .footer-information {
@@ -127,9 +128,9 @@
   padding: 5px;
   transition: all 0.3s ease;
 }
-.footer-information a:hover {
-  text-decoration: underline;
-  padding-left: 8px;
+.footer-information a:hover, .footer-contact a:hover {
+  color: var(--green-erin);
+  transform: scale(1.1);
 }
 .copyright p {
   color: var(--tiffany-blue);

@@ -1,180 +1,248 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/navbar.css" />
-    <!-- <link rel="stylesheet" href="../css/carrito.css" /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>Energy Sport - Carrito</title>
+    <link rel="stylesheet" href="../css/carrito.css" />
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/login.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header>
-        <section class="nav-mobile">
-            <input type="checkbox" id="menu-burguer">
-            <label for="menu-burguer">
-                <span class="bar top"></span>
-                <span class="bar middle"></span>
-                <span class="bar bottom"></span>
-            </label>
-            <aside class="aside-section aside-right">
-                <ul class="aside-list">
-                    <figure class="nav-logo"></figure>
-                    <section class="aside-search">
-                        <input type="text" placeholder="" class="nav-input"/>
-                        <a class="link-cart" href="./carrito.html">
-                            <img
-                            class="cart"
-                            src="../img/img-carrito/icons8-bolsa-de-compras-50 .png"
-                            alt="carrito de compras"
-                            width="35px"
-                            height="35px"
-                            />
-                        </a>
-                    </section>
-                    <li><a href="../../index.html" class="aside-anchor">Inicio</a></li>
-                    <li><a href="./productos.html" class="aside-anchor">Productos</a></li>
-                    <li><a href="./nosotros.html" class="aside-anchor">Nosotros</a></li>
-                    <li><a href="./contacto.html" class="aside-anchor">Contacto</a></li>
-                    <hr>
-                    <section class="aside-session">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Iniciar Sesión</a>
-                        <a href="./registro.html" class="">Registrarse</a>
-                    </section>
-                </ul>
-            </aside>
-        </section>
-        <nav class="nav-desk">
-            <figure class="nav-logo">
-            </figure>
-            <ul class="nav-links">
-                <li>
-                    <a href="../../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="./productos.html">Productos</a>
-                </li>
-            </ul>
-            <section class="search">
-                <input type="text" placeholder="" />
-            </section>
-            <section class="session">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">
-                  Iniciar Sesión
-                </a>
-                <a href="./registro.html">Registrarse</a>
-                <a class="link-cart" href="./carrito.html">
-                    <img class="cart" src="../img/img-carrito/icons8-bolsa-de-compras-50 .png" alt="carrito de compras" width="20px" height="20px"
-                />
-                </a>
-            </section>
-        </nav>
-        <!-- Modal -->
-        <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modal-iniciar-sesion aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="modal-iniciar-sesion">Iniciar Sesión</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <form action="#" class="form-container">
-                  <div class="col-12">
-                      <label for="user" class="form-label user">Usuario (solo <span>letras</span> y <span>números</span>)</label>
-                      <input type="text" name="user" id="user" class="form-control" minlength="4" maxlength="20" pattern="[a-zA-Z0-9]+" required>
-                  </div>
-                  <div class="col-12">
-                      <label for="pass" class="form-label">Contraseña</label>
-                      <input type="password" name="pass" id="pass" class="form-control" minlength="4" maxlength="20" required>
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn"       data-bs-dismiss="modal">
-                          <i class="fa-solid fa-circle-xmark" style="color: #e90707;"></i>
-                          <span>Cancelar</span>
-                      </button>
-                      <button type="submit" class="btn">
-                          <i class="fa-solid fa-user-check" style="color: #121212;"></i><span>Iniciar Sesión</span>
-                      </button>
-                  </div>
-                  <div class="login-btn">
-                    <a href="#" data-bs-dismiss="modal">Olvidé la contraseña</a>
-                    <a href="./registro.html">No tienes cuenta?</a>
-                  </div>
-                </form>
-                <div class="login-social col-12">
-                  <button class="google col-sm-5 col-10 btn" >
-                      <i class="fa-brands fa-google" style="color: #0EEF53;"></i> 
-                      <p>Iniciar con Google</p>
-                  </button>
-                  <button class="facebook col-sm-5 col-10 btn">
-                      <i class="fa-brands fa-facebook" style="color: #0EEF53;"></i> 
-                      <p>Iniciar con Facebook</p>
-                  </button>
+      <section class="nav-mobile">
+          <input type="checkbox" id="menu-burguer">
+          <label for="menu-burguer">
+              <span class="bar top"></span>
+              <span class="bar middle"></span>
+              <span class="bar bottom"></span>
+          </label>
+          <aside class="aside-section aside-right">
+              <ul class="aside-list">
+                  <figure class="nav-logo"></figure>
+                  <section class="aside-search">
+                      <input type="text" placeholder="" class="nav-input"/>
+                      <a class="link-cart" href="./carrito.html">
+                          <img
+                          class="cart"
+                          src="../img/img-carrito/icons8-bolsa-de-compras-50 .png"
+                          alt="carrito de compras"
+                          width="35px"
+                          height="35px"
+                          />
+                      </a>
+                  </section>
+                  <li><a href="../../index.html" class="aside-anchor">Inicio</a></li>
+                  <li><a href="./productos.html" class="aside-anchor">Productos</a></li>
+                  <li><a href="./nosotros.html" class="aside-anchor">Nosotros</a></li>
+                  <li><a href="./contacto.html" class="aside-anchor">Contacto</a></li>
+                  <hr>
+                  <section class="aside-session">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Iniciar Sesión</a>
+                      <a href="./registro.html" class="">Registrarse</a>
+                  </section>
+              </ul>
+          </aside>
+      </section>
+      <nav class="nav-desk">
+          <figure class="nav-logo">
+          </figure>
+          <ul class="nav-links">
+              <li>
+                  <a href="../../index.html">Inicio</a>
+              </li>
+              <li>
+                  <a href="./nosotros.html">Nosotros</a>
+              </li>
+              <li>
+                  <a href="./contacto.html">Contacto</a>
+              </li>
+              <li>
+                  <a href="./productos.html">Productos</a>
+              </li>
+          </ul>
+          <section class="search">
+              <input type="text" placeholder="" />
+          </section>
+          <section class="session">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">
+                Iniciar Sesión
+              </a>
+              <a href="./registro.html">Registrarse</a>
+              <a class="link-cart" href="./carrito.html">
+                  <img class="cart" src="../img/img-carrito/icons8-bolsa-de-compras-50 .png" alt="carrito de compras" width="20px" height="20px"
+              />
+              </a>
+          </section>
+      </nav>
+      <!-- Modal -->
+      <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modal-iniciar-sesion aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modal-iniciar-sesion">Iniciar Sesión</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="#" class="form-container">
+                <div class="col-12">
+                    <label for="user" class="form-label user">Usuario (solo <span>letras</span> y <span>números</span>)</label>
+                    <input type="text" name="user" id="user" class="form-control" minlength="4" maxlength="20" pattern="[a-zA-Z0-9]+" required>
                 </div>
+                <div class="col-12">
+                    <label for="pass" class="form-label">Contraseña</label>
+                    <input type="password" name="pass" id="pass" class="form-control" minlength="4" maxlength="20" required>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn"       data-bs-dismiss="modal">
+                        <i class="fa-solid fa-circle-xmark" style="color: #e90707;"></i>
+                        <span>Cancelar</span>
+                    </button>
+                    <button type="submit" class="btn">
+                        <i class="fa-solid fa-user-check" style="color: #121212;"></i><span>Iniciar Sesión</span>
+                    </button>
+                </div>
+                <div class="login-btn">
+                  <a href="#" data-bs-dismiss="modal">Olvidé la contraseña</a>
+                  <a href="./registro.html">No tienes cuenta?</a>
+                </div>
+              </form>
+              <div class="login-social col-12">
+                <button class="google col-sm-5 col-10 btn" >
+                    <i class="fa-brands fa-google" style="color: #0EEF53;"></i> 
+                    <p>Iniciar con Google</p>
+                </button>
+                <button class="facebook col-sm-5 col-10 btn">
+                    <i class="fa-brands fa-facebook" style="color: #0EEF53;"></i> 
+                    <p>Iniciar con Facebook</p>
+                </button>
               </div>
             </div>
           </div>
         </div>
-      </header>
-      <footer class="footer">
-        <section class="footer-group1">
-            <figure class="footer-logo">
-                <img src="../img/img-footer/logoenergy.png" alt="logo">
-            </figure>
-        </section>
-        <hr>
-        <section class="footer-group2">
-            <article class="footer-contact">
-                <h2>CONTACTO</h2>
-                <p>Horarios de atención</p>
-                <p>Lunes a sábados</p>
-                <p>9hs a 13hs - 17hs a 21hs</p>
-                <a href='mailto:energysport@gmail.com'><i class="fa-regular fa-envelope"></i>energysport@gmail.com</a>
-                <p><i class="fa-solid fa-phone"></i>3814432371</p>
-            </article>
-            <article class="footer-information">
-                <h2>INFORMACIÓN</h2>
-                <a href="./error404.html">Medios de pago</a>
-                <a href="./error404.html">Terminos y condiciones</a>
-                <a href="./error404.html">Cambio y/o devolución</a>
-                <a href="./error404.html">Envíos a domicilio</a>
-                <a href="./error404.html">Retiro en sucursal</a>
-            </article>
-            <article class="footer-card">
-                <h2>TARJETAS DE CREDITO</h2>
-                <div class="footer-credit">
-                    <img src="../img/img-footer/naranja-x-1.svg" alt="tarjeta">
-                    <img src="../img/img-footer/tarjeta-naranja.svg" alt="tarjeta">
-                    <img src="../img/img-footer/mastercard.svg" alt="tarjeta">
-                    <img src="../img/img-footer/visa.svg" alt="tarjeta">
-                    <img src="../img/img-footer/maestro.svg" alt="tarjeta">
-                </div>
-                <h2>NUESTRAS REDES</h2>
-                <div class="footer-social">
-                    <span class="footer-ig"><i class="fa-brands fa-instagram"></i></span>
-                    <span class="footer-tw"><i class="fa-brands fa-x-twitter"></i></span>
-                    <span class="footer-wp"><i class="fa-brands fa-whatsapp"></i></span>
-                    <span class="footer-fb"><i class="fa-brands fa-facebook"></i></span>
-                </div>
-            </article>
-        </section>
-        <hr>
-        <section class="copyright">
-            <p> Energysport &copy;| Todos los derechos reservados</p>
-        </section>
-      </footer>
+      </div>
+    </header>
+    <div class="container container-table col-12 col-md-10 m-auto mt-2 mb-2 d-flex flex-column">
+      <table class="table table-striped table-hover caption-top mb-0 p-0 col-12 col-md-10">
+        <caption class="table-caption">PRODUCTOS EN TU CARRITO</caption>
+        <thead>
+          <tr>
+            <th>Imagen</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Subtotal</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="img-col"><img src="../img/img-main-index/Zapatilla-1-1.png" class="img-thumbnail" width="50"></td>
+                <td data-titulo="PRODUCTO">Zapatillas Adidas FORUM</td>
+                <td data-titulo="CANTIDAD">
+                  <input
+                      type="number"
+                      id="quantity"
+                      name="quantity"
+                      min="1"
+                      value="1"
+                      max="10"
+                      /></td>
+                <td data-titulo="PRECIO">$95.200</td>
+                <td data-titulo="SUBTOTAL">$95.200</td>
+                <td> <button class="btn-eliminar"> <i class="fa-solid fa-trash"></i></button></td>
+            </tr>
+            <tr>
+              <td class="img-col"><img src="../img/img-main-index/Zapatilla-2.png" class="img-thumbnail" width="50"></td>
+                <td>Zapatillas Adidas FORUM</td>
+                <td><input
+                      type="number"
+                      id="quantity"
+                      name="quantity"
+                      min="1"
+                      value="1"
+                      max="10"/></td>
+                <td>$95.200</td>
+                <td>$95.200</td>
+                <td> <button class="btn-eliminar"> <i class="fa-solid fa-trash"></i></button></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="table-active">
+              <th scope="row" colspan="2">TOTAL A PAGAR</th>
+              <td class="p-total" colspan="4">$180.000</td>
+              <td></td>
+            </tr>
+        </tfoot>
+      </table>
+      <div class="botones">
+        <button class="btn-pagar">
+          <a href="./error404.html">Iniciar Pago<i class="fa-solid fa-bag-shopping"></i></a>
+        </button>
+        <button class="btn-carrito">
+          <a href="./productos.html">Seguir Comprando <i class="fa-solid fa-cart-shopping"></i></a>
+        </button>
+      </div>
+    </div>
+    <footer class="footer">
+      <section class="footer-group1">
+          <figure class="footer-logo">
+              <img src="../img/img-footer/logoenergy.png" alt="logo">
+          </figure>
+      </section>
+      <hr>
+      <section class="footer-group2">
+          <article class="footer-contact">
+              <h2>CONTACTO</h2>
+              <p>Horarios de atención</p>
+              <p>Lunes a sábados</p>
+              <p>9hs a 13hs - 17hs a 21hs</p>
+              <a href='mailto:energysport@gmail.com'><i class="fa-regular fa-envelope"></i>energysport@gmail.com</a>
+              <p><i class="fa-solid fa-phone"></i>3814432371</p>
+          </article>
+          <article class="footer-information">
+              <h2>INFORMACIÓN</h2>
+              <a href="./error404.html">Medios de pago</a>
+              <a href="./error404.html">Terminos y condiciones</a>
+              <a href="./error404.html">Cambio y/o devolución</a>
+              <a href="./error404.html">Envíos a domicilio</a>
+              <a href="./error404.html">Retiro en sucursal</a>
+          </article>
+          <article class="footer-card">
+              <h2>TARJETAS DE CREDITO</h2>
+              <div class="footer-credit">
+                  <img src="../img/img-footer/naranja-x-1.svg" alt="tarjeta">
+                  <img src="../img/img-footer/tarjeta-naranja.svg" alt="tarjeta">
+                  <img src="../img/img-footer/mastercard.svg" alt="tarjeta">
+                  <img src="../img/img-footer/visa.svg" alt="tarjeta">
+                  <img src="../img/img-footer/maestro.svg" alt="tarjeta">
+              </div>
+              <h2>NUESTRAS REDES</h2>
+              <div class="footer-social">
+                  <span class="footer-ig"><i class="fa-brands fa-instagram"></i></span>
+                  <span class="footer-tw"><i class="fa-brands fa-x-twitter"></i></span>
+                  <span class="footer-wp"><i class="fa-brands fa-whatsapp"></i></span>
+                  <span class="footer-fb"><i class="fa-brands fa-facebook"></i></span>
+              </div>
+          </article>
+      </section>
+      <hr>
+      <section class="copyright">
+          <p> Energysport &copy;| Todos los derechos reservados</p>
+      </section>
+    </footer>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+    ></script>
   </body>
 </html>

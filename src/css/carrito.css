@@ -1,118 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
 }
-body{
-    display: flex;
-    justify-content: center;
-    background-color: #DDDDDD;
-}
-body .btn-inicio{
-    display: inline-block;
-    
-}
-.carrito{
-    border: 1px solid #DDDDDD;
-    width: 60%;
-    margin-top: 30px;
+.container-table{
+    margin: auto;
+    box-shadow: 5px 5px 10px #121212;
     border-radius: 10px;
-    overflow: hidden;
-    position: sticky ;
-    top: 0;
-
 }
-.carrito .carrito-header{
-    background-color: #121212;
-    color: #dddddd;
+.table{
+    text-align: right;
+    cursor: default;
+}
+
+.table-caption{
+    font-weight: bold;
+    font-size: 20px;
     text-align: center;
-    padding: 30px;
-
-}
-
-.carrito .carrito-item{
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #121212;
-    padding: 20px;
-    position: relative;
-}
-.carrito .carrito-item img{
-    margin-right: 40px;
-}
-.carrito .carrito-item .carrito-item-titulo{
-    display: block;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-
-}
-.carrito .carrito-item .selector-cantidad{
-    display: inline-block;
-    
-    
-    
-}
-
-.carrito .carrito-item .selector-cantidad input{
-    width: 35px;
-  
-}
-.carrito .carrito-item .carrito-item-precio{
-    font-weight: bold;
-    font-size: 18px;
-    display: inline-block;
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-.carrito .carrito-item .btn-eliminar{
-    position: absolute;
-    right: 15px;
-    top: 15px;
     color: #121212;
+    margin-bottom: 20px;
+}
+#quantity{
+    width: 40px;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 25px;
+    padding: 20px;
+}
+
+.botones button {
+    border-radius: 10px;
+    background-color: #121212;
+    padding: 8px;
+    border: solid 1px #121212;
+}
+.botones a{
+    text-decoration: none;
+    color:#dddddd;
+}
+
+.botones button:hover{
+    border: solid 1px #0eef53;
+}
+.botones button:hover a{
+    color: #0eef53;
+}
+.botones button:hover i{
+    transform: rotateY(360deg);
+}
+.btn-pagar i, .btn-carrito i{
+    margin-left: 10px;
+    transition: all .5s;
+}
+.btn-eliminar {
+    cursor: pointer;
+    border-radius: 50%;
     width: 30px;
     height: 30px;
-    line-height: 30px;
-    text-align: center;
-    border: 1px solid  #121212;
-    border-radius: 50%;
-    cursor: pointer;
-    display: block;
-    background: transparent;
-    z-index: 20;
-}
-.carrito-total{
     background-color: #121212;
+    color: #0eef53;
+    border: 2px solid #121212;
 }
-
-.carrito-total .fila{
+.btn-eliminar:hover{
+    color: red;
+}
+.img-col{
+    width: 60px;
+}
+tfoot th, .p-total{
+    text-align: right;
+    background-color: #121212 !important;
     color: #DDDDDD;
-    display: flex;
-    justify-content:flex-end;
-    align-items:center;
-    font-size: 23px;
-    font-weight: bold;
-    margin-bottom: 30px;
 }
-.carrito-total .fila strong{
-    margin-right: 25px;
+.p-total{
+    border-left: 2px solid #dddddd;
 }
 
-.carrito-total .btn-pagar{
-    width: 100%;
-    border:none;
-    background-color: white;
-    border-radius: 10px;
-    font-size: 18px;
-    padding: 18px;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    cursor: pointer;
+@media screen and (max-width: 576px){
+    .container-table{
+        padding: 10px;
+        box-shadow: none;
+    }
+    .table{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .thead{
+        display: none;
+    }
+    .botones{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+    }
+    .botones button{
+        width: 49%;
+        height: 60px;
+    }
+    .table tr td:nth-child(2), .table th:nth-child(2){
+        display: none;
+    }
+    tfoot tr th{
+        display: none;  
+    }
     
-
-}
-
-.carrito-total .btn-pagar i{
-    margin-left: 10px;
 }
