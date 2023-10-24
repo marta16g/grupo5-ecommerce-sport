@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #DDDDDD;
+}
+
+#carouselExampleFade{
+    width: 32rem;
+    height: 32rem;
+    overflow: hidden;
+}
+
+#carouselExampleFade img{
+    transition: 0.3s;
+}
+
+#carouselExampleFade img:hover{
+    transform: scale(1.1);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: #0EEF53;
+}
+
+.img-peque img{
+    width: 8rem;
+}
+
+input{ display: none; }
+label{
+    font-family: sans-serif;
+    padding: 10px 16px;
+    border-right: 1px solid #ccc;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+label:hover{
+    background: #eee;
+}
+input:checked + label{
+    background: #becbff;
+}
+
+.botones img{
+    width: 2rem;
+}
+
+/* .botones a{
+    width: 20rem;
+    margin-right: 1rem;
+} */
+
+.icono{
+    width: 5rem;
+    height: 3.5rem;
+}
+
+label{
+    background-color: rgba(114, 2, 2, 0.37);
+}
+
+@media (min-width: 200px) {
+    .accordion-item{
+        width: 17rem;
+    }
+
+    .card{
+        width: 20rem;
+    }
+
+    
+}
+
+@media (max-width: 767.5px){
+    .card-text{
+        display: none;
+    }
+
+    .card-body{
+        box-shadow: none;
+    }
+    #carouselExampleFade{
+        width: 15rem;
+        height: 15rem;
+        display: flex;
+        align-self: center;
+    }
+
+    .accordion{
+        width: 20rem;
+    }
+
+    .galeria{
+        display: flex;
+        align-items: center;
+    }
+
+    .img-peque img{
+        width: 6rem;
+    }
+
+    .img-peque{
+    
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px){
+    .card-text{
+        display: block;
+    }
+    .accordion{
+        display: none;
+    }
+    .botones a{
+        width: 6rem;
+    }   
+    #carouselExampleFade{
+        width: 20rem;
+        height: 20rem;
+        display: flex;
+        align-self: center;
+    }
+
+    .galeria img{
+        width: 5rem;
+    }
+
+    .card{
+        width: 17rem;
+        height: 25rem;
+    }
+
+    .card p, .card h5, .card h3, legend{
+        font-size: smaller;
+    }
+}
+
+@media (min-width: 870px){
+    .botones a{
+        width: 10rem;
+    }
+}
+
+@media (min-width: 1000px){
+    .botones a{
+        width: 20rem;
+        margin-right: 1rem;
+    }
+    .card{
+        width: 35rem;
+    }
+}
