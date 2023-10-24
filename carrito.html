@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/estilo.css" />
+    <title>Energy Sport - Carrito</title>
+    <link rel="stylesheet" href="./css/carrito.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <div class="container-table">
-    
-      <table class="table table-hover caption-top">
+    <div class="container container-table col-12 col-md-10 m-auto mt-2">
+      <table class="table table-hover caption-top mb-0 p-0 col-12 col-md-10">
         <caption class="table-caption">PRODUCTOS EN TU CARRITO</caption>
         <thead>
           <tr>
+            <th>Imagen</th>
             <th>Producto</th>
             <th>Cantidad</th>
             <th>Precio</th>
@@ -29,36 +29,44 @@
         </thead>
         <tbody>
             <tr>
+                <td class="img-col"><img src="" class="img-thumbnail" width="50"></td>
                 <td data-titulo="PRODUCTO">Zapatillas Adidas FORUM</td>
-                <td data-titulo="CANTIDAD"><input
+                <td data-titulo="CANTIDAD">
+                  <input
                       type="number"
                       id="quantity"
                       name="quantity"
                       min="1"
-                      max="10"/></td>
+                      value="1"
+                      max="10"
+                      /></td>
                 <td data-titulo="PRECIO">$95.200</td>
                 <td data-titulo="SUBTOTAL">$95.200</td>
                 <td> <button class="btn-eliminar"> <i class="fa-solid fa-trash"></i></button></td>
             </tr>
             <tr>
+              <td class="img-col"><img src="" class="img-thumbnail" width="50"></td>
                 <td>Zapatillas Adidas FORUM</td>
                 <td><input
                       type="number"
                       id="quantity"
                       name="quantity"
                       min="1"
+                      value="1"
                       max="10"/></td>
                 <td>$95.200</td>
                 <td>$95.200</td>
                 <td> <button class="btn-eliminar"> <i class="fa-solid fa-trash"></i></button></td>
             </tr>
             <tr>
+              <td class="img-col"><img src="" class="img-thumbnail" width="50"></td>
                 <td>Zapatillas Adidas FORUM</td>
                 <td class="selector-cantidad"><input 
                       type="number"
                       id="quantity"
                       name="quantity"
                       min="1"
+                      value="1"
                       max="10"/></td>
                 <td>$95.200</td>
                 <td>$95.200</td>
@@ -66,23 +74,21 @@
             </tr>
         </tbody>
         <tfoot>
-            <tr>
-              <td colspan="5" class="p-total">TOTAL A PAGAR $180.000</td>
+            <tr class="table-active">
+              <th scope="row" colspan="2">TOTAL A PAGAR</th>
+              <td class="p-total" colspan="4">$180.000</td>
+              <td></td>
             </tr>
         </tfoot>
       </table>
-
       <div class="botones">
         <button class="btn-pagar">
-          Iniciar Pago<i class="fa-solid fa-bag-shopping"></i>
+          <a href="./error404.html">Iniciar Pago<i class="fa-solid fa-bag-shopping"></i></a>
         </button>
-          <button class="btn-carrito">Seguir Comprando <i><i class="fa-solid fa-cart-shopping"></i></i></button>
+          <button class="btn-carrito">
+            <a href="./productos.html">Seguir Comprando <i class="fa-solid fa-cart-shopping"></i></a></button>
         </div>
     </div>
-
-
-
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
