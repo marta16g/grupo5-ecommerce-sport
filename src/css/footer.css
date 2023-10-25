@@ -27,9 +27,11 @@
   cursor: default;
 }
 .footer-contact {
+  display: flex;
   flex-direction: column;
   color: var(--tiffany-blue);
   cursor: default;
+  gap: 10px;
 }
 .footer-contact p i,
 .footer-contact a i {
@@ -40,8 +42,10 @@
 .footer-contact a {
   text-decoration: none;
   transition: all .3s;
-  margin-bottom: 5px;
   color: var(--tiffany-blue);
+}
+.footer-contact p{
+  margin-bottom: 0;
 }
 .footer-information {
   display: flex;

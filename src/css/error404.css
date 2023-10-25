@@ -25,6 +25,9 @@ body{
 
 /* 404 */
 .card{
+    padding-top: 50px;
+    border: none;
+    cursor: default;
     color: var(--night);
     background-color: var(--platinum);
     position: relative;

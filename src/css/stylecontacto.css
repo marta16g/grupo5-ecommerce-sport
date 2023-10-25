@@ -72,9 +72,14 @@ body {
     font-size: 16px;
     border-radius: 10px;
     width: 150px;
+    font-weight: 400;
     cursor: pointer;
     outline: none;
     border: none;
+}
+.contacto-form .submit:hover{
+    background-color: var(--green-erin);
+    color: var(--night);
 }
 .container .location {
     display: flex;
