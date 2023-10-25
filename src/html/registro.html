@@ -141,14 +141,16 @@
         <section class="reg-info justify-content-between">
           <div class="col-12 col-sm-5">
             <label for="nombre" class="form-label">Nombre</label>
+            <!-- pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$" -->
+            <!-- pattern="[a-zA-Z0-9-]+" -->
             <input
               type="text"
               class="form-control"
               id="nombre"
               pattern="[a-zA-Z,.'-]+$/i"
-              maxlength="10"
-              minlength="2"
               title="Super necesario"
+              minlength="2"
+              maxlength="20"
               required
             />
           </div>
