@@ -40,6 +40,7 @@
 .footer-contact a {
   text-decoration: none;
   transition: all .3s;
+  margin-bottom: 5px;
   color: var(--tiffany-blue);
 }
 .footer-information {
