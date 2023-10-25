@@ -2,97 +2,96 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #DDDD;
-    
 }
-body{
+
+body {
 background-color: #DDDD;
 }
 
-.carousel-indicators {
+main .galeria .carousel .carousel-indicators {
     background: none;
 }
 
-.btn, .carousel-control-next-icon, .carousel-control-prev-icon, label:hover{
+main .btn, main .carousel-control-next-icon, main .carousel-control-prev-icon, main .talles label:hover{
     background-color: #0EEF53;
     color: white;
 }
 
-.ini{
-     text-decoration: none;
+main .ini{
+    text-decoration: none;
     color: #0EEF53;
 }
 
-.pequeño img{
+main .galeria .pequeño img{
     filter: grayscale();
     transition: 0.2s;
 }
 
-.pequeño img:hover{
+main .galeria .pequeño img:hover{
     filter: grayscale(0%);
 }
 
-input{
+main .talles input{
     display: none;
 }
 
-label{
+main .talles label{
     padding: 10px 16px;
     border-right: 1px solid #ccc;
     transition: all 0.3s;
     background-color: white;
 }
 
-label:last-of-type{ 
+main .talles label:last-of-type{ 
     border-right: 0; 
 }
 
-.carousel-item img{
+main .carousel-item img{
     cursor: zoom-in;
 }
 
-.carousel-item img:hover{
+main.carousel-item img:hover{
     transform: scale(1.1);
 }
 
-.coment{
+main .coment{
     margin-bottom: 2rem
 }
 
-.icono{
+main section .card .icono{
         width: 2rem;
         margin-left: 1rem;
     }
 
 
- .recom{
+ main section .recom{
     width: 12rem;
  }   
- .accordion{
+ main .accordion{
     margin: 0 auto;
  }
- .table{
+ main .accordion .table{
     margin: 0 auto;
  }
  
 @media (max-width: 575px) {
-    .pequeño img{
+   main .galeria .pequeño img{
         width: 3rem;
     }
-    .recom{
+   main section .recom{
         width: 10rem;
     }
     
-    .accordion{
+   main .accordion{
        
         margin-top: 2rem;
         width: 15rem;
     }
-    .usu{
+   main section .usu{
         width: 3rem;
         height: 3rem;
     }
-    .publicar{
+   main section .publicar{
         width: 5rem;
     }
     
@@ -102,32 +101,32 @@ label:last-of-type{
 
 @media (min-width: 416px){
 
-   .pequeño img{
+   main .galeria .pequeño img{
         width: 6rem;
     }
  
-    .usu{
+   main .usu{
         width: 5rem;
         height: 5rem;
     }
 
-    .accordion{
+    main .accordion{
         width: 25rem;
     }
 
-    .publicar{
+    main section .publicar{
         margin-right: 5rem;
     }
 }
 
 @media (min-width: 576px) {
-    .descrip{
+    main section .descrip{
         width: 30rem;
     }
    
 }
 @media (min-width: 768px) {
-    .descrip{
+    main section .descrip{
         margin-right: 3rem;
         margin-left: 3rem;
         width: 20rem;
@@ -135,16 +134,16 @@ label:last-of-type{
 }
 
 @media (min-width: 998px){
-    .descrip{
+    main section .descrip{
         width: 30rem;
     }
-    .accordion{
+    main section .accordion{
         width: 30rem;
     }
-    .publicar{
+    main section .publicar{
     margin-left: 10rem;
     }
-    .carousel{
+    main section .galeria .carousel{
         width: 22rem;
     }
 
