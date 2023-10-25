@@ -20,10 +20,65 @@ body{
     background-color: var(--platinum);
 }
 
+.productos-navegador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.productos-navegador button{
+    min-width: 100px;
+    max-width: 150px;
+    height: 40px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid var(--night);
+    background-color: transparent;
+    transition: all .3s;
+    cursor: pointer;
+}
+.productos-navegador button a{
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    color: var(--night); 
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.productos-navegador button:hover{
+    background-color: var(--night);
+    transform: skewX(-20deg);
+}
+.productos-navegador button:hover a{
+    color: var(--platinum);
+}
+.producto-categoria h3{
+    background-color: var(--night);
+    color: var(--platinum);
+    height: 60px;
+    line-height: 60px;
+}
+.producto-categoria figure, .productos-container figure{
+    margin: 5px auto;
+    transform: skewX(-10deg);
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.producto-categoria figure .producto-promo, .productos-container figure .producto-promo {
+    width: 90%;
+    height: 100%;
+    object-fit: contain;
+}
 .productos-card{
     width: 15rem !important;
+    min-height: 26rem;
+    max-height: 26rem;
     background-color: var(--platinum);
     transition: all .3s;
+    overflow: hidden;
 }
 .productos-card:hover{
     border: 0 2px 2px 0 solid var(--slate-gray);
@@ -32,6 +87,11 @@ body{
 }
 .productos-card :is(p, h5){
     cursor: default;
+}
+.productos-card img{
+    object-fit: cover;
+    width: 100%;
+    height: 15rem !important;
 }
 .productos-card .productos-btn{
     width: 150px;

@@ -2,6 +2,7 @@
   background-color: var(--night);
   width: 100%;
   position: relative;
+  bottom: 0;
   font-size: 13px !important;
   z-index: 9;
 }
@@ -134,11 +135,13 @@
 }
 .copyright p {
   color: var(--tiffany-blue);
+  margin-bottom: 0 !important;
 }
 .copyright {
   text-align: center;
   margin-top: 10px;
   height: 100%;
+  padding: 10px;
 }
 hr {
   color: var(--tiffany-blue);
