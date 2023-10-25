@@ -54,11 +54,18 @@ body{
 .form-container{
     max-width: 600px;
 }
+.form-container:focus-within{
+    border: 2px solid var(--night);
+    border-radius: 5px;
+}
 form label{
     font-size: 1rem;
 }
 .form-control:focus, .form-control:active{
-    outline: var(--green-erin) solid 3px;
+    border: none !important;
+    outline: var(--green-erin) solid 2px;
+    box-shadow: none !important;
+    border-radius: 5px !important;
 }   
 
 .pass{
@@ -133,5 +140,8 @@ form label{
 @media screen and (max-width: 992px){
     .img-container{
         display: none;
+    }
+    .form-container:focus-within{
+        border: none;
     }
 }

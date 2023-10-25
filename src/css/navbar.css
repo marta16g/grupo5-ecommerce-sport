@@ -385,3 +385,19 @@ header a{
     font-weight: 500;
 }
 
+main :is(section button, .btn, .btn-outline-success, form input[type=submit]), 
+.container :is(section button, .btn, .btn-outline-success, form input[type=submit]){
+    background-color: var(--night) !important;
+    color: var(--green-erin) !important;
+    font-weight: bold !important;
+    transition: all .3s !important;
+    position: relative !important;
+    cursor: pointer !important;
+    min-width: 100px !important;
+    border-radius: 0 !important;
+}
+main :is(section button, .btn, .btn-outline-success, form input[type=submit]):hover, 
+.container :is(section button, .btn, .btn-outline-success, form input[type=submit]):hover{
+    background-color: var(--green-erin) !important;
+    color: var(--night) !important;
+}
