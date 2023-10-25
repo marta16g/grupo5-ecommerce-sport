@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #DDDD;
+    
+}
+body{
+background-color: #DDDD;
+}
+
+.carousel-indicators {
+    background: none;
+}
+
+.btn, .carousel-control-next-icon, .carousel-control-prev-icon, label:hover{
+    background-color: #0EEF53;
+    color: white;
+}
+
+.ini{
+     text-decoration: none;
+    color: #0EEF53;
+}
+
+.pequeño img{
+    filter: grayscale();
+    transition: 0.2s;
+}
+
+.pequeño img:hover{
+    filter: grayscale(0%);
+}
+
+input{
+    display: none;
+}
+
+label{
+    padding: 10px 16px;
+    border-right: 1px solid #ccc;
+    transition: all 0.3s;
+    background-color: white;
+}
+
+label:last-of-type{ 
+    border-right: 0; 
+}
+
+.carousel-item img{
+    cursor: zoom-in;
+}
+
+.carousel-item img:hover{
+    transform: scale(1.1);
+}
+
+.coment{
+    margin-bottom: 2rem
+}
+
+.icono{
+        width: 2rem;
+        margin-left: 1rem;
+    }
+
+
+ .recom{
+    width: 12rem;
+ }   
+ .accordion{
+    margin: 0 auto;
+ }
+ .table{
+    margin: 0 auto;
+ }
+ 
+@media (max-width: 575px) {
+    .pequeño img{
+        width: 3rem;
+    }
+    .recom{
+        width: 10rem;
+    }
+    
+    .accordion{
+       
+        margin-top: 2rem;
+        width: 15rem;
+    }
+    .usu{
+        width: 3rem;
+        height: 3rem;
+    }
+    .publicar{
+        width: 5rem;
+    }
+    
+}
+
+
+
+@media (min-width: 416px){
+
+   .pequeño img{
+        width: 6rem;
+    }
+ 
+    .usu{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .accordion{
+        width: 25rem;
+    }
+
+    .publicar{
+        margin-right: 5rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .descrip{
+        width: 30rem;
+    }
+   
+}
+@media (min-width: 768px) {
+    .descrip{
+        margin-right: 3rem;
+        margin-left: 3rem;
+        width: 20rem;
+    }   
+}
+
+@media (min-width: 998px){
+    .descrip{
+        width: 30rem;
+    }
+    .accordion{
+        width: 30rem;
+    }
+    .publicar{
+    margin-left: 10rem;
+    }
+    .carousel{
+        width: 22rem;
+    }
+
+}
