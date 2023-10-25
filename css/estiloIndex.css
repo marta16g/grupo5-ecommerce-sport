@@ -18,23 +18,22 @@
     display: block;
 }
 
-h3{
-    font-family: 'Noto Sans', sans-serif;
+main h3{
     color: #0EEF53;
     background-color: #121212;
     width: 100%;
 }
 
-h4{
+main h4{
     background-color: #DDDDDD;
     margin:0;
 }
 
-h5{
+main h5{
     background: none;
 }
 
-button{
+main button{
     color: #0EEF53;
 }
 
@@ -42,19 +41,18 @@ a{
     text-decoration: none;
 }
 
-.div1{
+main .div1{
     box-shadow: 0rem 0rem 1rem gray ;
 }
 
-.div1 img{
+main .div1 img{
     object-fit: contain;
 }
 
-.div1:hover{ 
+main .div1:hover{ 
     transform: scale(1.05);
     transition: 0.7s;
 }
-
 
 /* seccion de mujer etc */
 
@@ -80,26 +78,34 @@ a{
 
 
 /* logo de whatsapp */
-.wsp{
-    background: none;
-    height: 5rem;
-    width: 5rem;
+.divWsp a{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: var(--platinum);
     position: fixed;
-    right: 0;
-    bottom: 0;
+    right: 10px;
+    bottom: 10px;
+    z-index: 6;
 }
-
-.wsp:hover{
-    transform: scale(1.1);
+.divWsp a svg{
+    fill: var(--green-erin);
+    height: 2.5rem;
+    width: 2.5rem;
+    transition: all .5s;
 }
+.divWsp a:hover{
+    border: 2px solid var(--green-erin);
+    background-color: var(--night);
 
+}
+.divWsp a:hover svg{
+    transform: scale(1.1) rotateY(360deg);
+}
 .contenedorPubl, .publicidad{
         display: flex;
         justify-content: center;
         margin-bottom: 4rem;
     }
-
-  
 
 @media (max-width: 529px){
 
@@ -176,6 +182,7 @@ a{
 
     #carrousel{
         display: block;
+        position: relative;
     }
 }
 
@@ -237,6 +244,7 @@ a{
     width: 20rem;
     overflow: hidden;
     position: relative;
+    cursor: default;
 }
 
 .divGenero img{
@@ -254,7 +262,8 @@ a{
     transform: translateY(30px);
     transition: all 0.2s ease-out  0.1s;
     opacity: 0;
-    color: white;
+    color: var(--platinum);
+    cursor: default;
 }
 
 .divGenero:hover .cardDescr h5{
@@ -312,7 +321,7 @@ video{
 
 @keyframes cambioDeColor{
     from{
-          filter: grayscale();
+          filter: grayscale(100%);
     }
     to{
         filter: grayscale(0%);
